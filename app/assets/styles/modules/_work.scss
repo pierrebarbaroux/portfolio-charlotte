@@ -1,0 +1,284 @@
+.work {
+  padding: rem(100px) 0 rem(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Handle left/right alignment
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  &:nth-child(odd) {
+    .work__content-container {
+      align-items: flex-start;
+      text-align: left;
+    }
+    .work__content-type {
+      text-align: left;
+    }
+  }
+
+  & > * {
+    width: 50%;
+  }
+
+  &__type {
+    text-transform: uppercase;
+    font-size: rem(15px);
+    line-height: rem(23px);
+  }
+
+  &__name {
+    font-size: rem(48px);
+    line-height: rem(72px);
+    font-family: $notoserifsc-bold;
+  }
+
+  &__description {
+    font-size: rem(18px);
+    line-height: rem(28px);
+    font-family: $rubik-light;
+  }
+
+  &__more {
+    font-size: rem(15px);
+    line-height: rem(25px);
+    font-family: $rubik-medium;
+  }
+
+  &__image {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    &--landing {
+      height: 300px;
+    }
+  }
+
+  &__more {
+    a {
+      color: $black;
+    }
+  }
+
+  // Intro of work single
+  &__intro {
+    &-image {
+      height: 400px;
+
+      @include medium {
+        height: 300px;
+      }
+
+      @include small {
+        height: 200px;
+      }
+    }
+    &-container {
+      width: 90%;
+      padding: 50px 0;
+
+      @include small {
+        width: 100%;
+      }
+    }
+    &-header {
+      width: 50%;
+      text-align: right;
+
+      @include small {
+        width: 100%;
+      }
+    }
+    &-content {
+      width: 60%;
+      margin: 0 0 0 auto;
+      padding-top: 40px;
+
+      @include small {
+        width: 100%;
+      }
+    }
+  }
+
+  &__pictures {
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+
+    @include small {
+      display: block;
+      padding-top: 50px;
+    }
+
+    > div {
+      margin: auto;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+
+        @include small {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+
+      @include small {
+        width: 60%;
+      }
+    }
+  }
+
+  &__content {
+
+    // Item content container (works-alloàpoç)
+    &-container {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+
+      & > *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__section {
+    padding: rem(100px) 0 rem(50px);
+
+    &-container {
+      &.work-explanation {
+        width: 40%;
+
+        @include small {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &-title {
+      font-family: $rubik;
+      font-size: rem(25px);
+    }
+
+    &-description {
+      font-family: $rubik-light;
+      font-size: rem(18px);
+      line-height: rem(28px);
+      padding-top: 20px;
+    }
+
+    // Type: work-fullwidth
+    &.work-fullwidth {
+      width: 100vw;
+      text-align: center;
+      padding: 100px 0;
+
+      &.background-blue {
+        background: #13315C;
+      }
+
+      &.background-red {
+        background: #CD5334;
+      }
+
+      &.background-green {
+        background: #419D78;
+      }
+
+      .work__section-title {
+        color: $white;
+        text-transform: uppercase;
+        font-family: $rubik-medium;
+        font-size: rem(23px);
+      }
+    }
+
+    // Type: work-explanation
+    &.work-explanation {
+      margin-bottom: 100px;
+
+      > .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      img {
+        max-width: 300px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+      }
+    }
+
+    // Type: work-picture-fullwidth
+    &.work-picture-fullwidth {
+      width: 100vw;
+      position: relative;
+      height: 700px;
+      overflow: hidden;
+
+      @include small {
+        height: 400px;
+        padding: rem(30px) 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .work__pictures {
+        padding-top: 0;
+
+        > div {
+          position: absolute;
+          left: 0;
+
+          > img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    // Type: work-slider-fullwidth
+    &.work-slider-fullwidth {
+      width: 100vw;
+      text-align: center;
+
+      .work__section-title {
+        text-transform: uppercase;
+        font-family: $rubik-medium;
+        font-size: rem(23px);
+      }
+    }
+  }
+
+  &__next {
+    .work {
+      flex-direction: row-reverse;
+
+      .work__content-container {
+        display: block;
+        text-align: right;
+      }
+      .work__content-type {
+        text-align: right;
+      }
+    }
+  }
+}

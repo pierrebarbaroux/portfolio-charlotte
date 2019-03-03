@@ -1,0 +1,21 @@
+.works {
+  width: 100%;
+  position: relative;
+  background: $white;
+  color: $black;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @include medium {
+      padding: 0 rem(30px);
+    }
+
+    @include small {
+      padding: 0 rem(10px);
+    }
+  }
+}

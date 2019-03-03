@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include medium {
+    left: 50px;
+    right: 50px;
+  }
+
+  @include small {
+    left: 30px;
+    right: 30px;
+  }
+
+  a {
+    color: $black;
+  }
+
+  &__left {
+    font-size: rem(22px);
+    font-weight: bold;
+  }
+
+  &__right {
+    font-size: rem(18px);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.page-works-single,
+.page-works-all {
+  margin-top: 90px;
+}

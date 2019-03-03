@@ -1,0 +1,29 @@
+.announcement {
+  width: 100%;
+  background: $primary;
+  color: $white;
+  text-align: left;
+
+  &__container {
+    padding: 80px;
+    width: 90%;
+    margin: auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: rem(48px);
+    line-height: rem(72px);
+    font-family: $notoserifsc-bold;
+  }
+
+  &__contact {
+    font-size: rem(23px);
+    line-height: rem(35px);
+    margin-top: 50px;
+  }
+}

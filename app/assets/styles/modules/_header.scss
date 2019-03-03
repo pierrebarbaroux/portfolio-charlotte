@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  position: relative;
+  background: $primary;
+  color: $white;
+
+  &--full {
+    height: 100vh;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: rem(40px);
+
+    @include small {
+      padding: rem(20px) rem(10px);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &--about {
+      flex-direction: row-reverse;
+    }
+
+    h1 {
+      font-size: rem(80px);
+      line-height: rem(120px);
+      font-family: $notoserifsc-bold;
+    }
+  }
+}
+
+.lateral {
+  &__text {
+    position: absolute;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    bottom: 50px;
+
+    &--right {
+      right: 80px;
+
+      &::before {
+        content: '—';
+      }
+    }
+  }
+}

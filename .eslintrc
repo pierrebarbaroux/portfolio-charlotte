@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "plugins": ["vue"],
+  "env": {
+      "browser": true,
+      "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack.base.conf.js"
+      }
+    }
+  },
+  "rules": {
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "vue": "never"
+    }],
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }],
+    "no-param-reassign": ["error", {
+      "props": true, "ignorePropertyModificationsFor": ["state"]
+    }]
+  },
+  "globals": {
+    "sr": true
+  }
+}

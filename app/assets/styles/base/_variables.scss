@@ -1,0 +1,29 @@
+// Define base font-size for the px to rem function
+$base-font-size: 16px;
+
+// Colors
+$black: #0F0F0F;
+$white: #FFFFFF;
+$grey: #D8D8D8;
+$dark-grey: #515151;
+$light-grey: #F2F2F2;
+$primary: #FEC3A6;
+$hover: #D81E5B;
+
+// Fonts
+$rubik-light: 'Rubik-Light';
+$rubik: 'Rubik-Regular';
+$rubik-medium: 'Rubik-Medium';
+$rubik-bold: 'Rubik-Bold';
+$rubik-black: 'Rubik-Black';
+// ---
+$notoserifsc-light: 'NotoSerifSC-Light';
+$notoserifsc: 'NotoSerifSC-Regular';
+$notoserifsc-medium: 'NotoSerifSC-Medium';
+$notoserifsc-bold: 'NotoSerifSC-Bold';
+$notoserifsc-black: 'NotoSerifSC-Black';
+
+// Media queries
+$small: 768px;
+$medium: 1024px;
+$large: 1280px;

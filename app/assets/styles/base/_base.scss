@@ -1,0 +1,68 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background: $white;
+  color: $black;
+  max-width: 100%;
+  position: relative;
+  font-family: $rubik, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90vw;
+  margin: auto;
+
+  > nav + div {
+    margin-top: 100px;
+  }
+
+  &--landing {
+    max-width: 95vw;
+    margin-right: 0;
+  }
+}
+
+a {
+  transition: .3s;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover;
+  }
+}
+
+img {
+  object-fit: contain;
+}
+
+// Adapt link color for colored backgrounds
+.announcement, footer.footer--colored {
+  a {
+    color: $white;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.fade-enter-active {
+  animation: slide-up .4s ease;
+}
+.fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

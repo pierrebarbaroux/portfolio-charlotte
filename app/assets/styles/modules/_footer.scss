@@ -1,0 +1,50 @@
+.footer {
+  width: 90%;
+  position: relative;
+  text-align: right;
+  color: $black;
+  line-height: 1.5;
+
+  &--colored {
+    background: $primary;
+    color: $white;
+  }
+
+  &__container {
+    padding: rem(80px);
+
+    @include small {
+      padding: rem(30px);
+    }
+  }
+
+  &__nav {
+    font-size: rem(18px);
+  }
+
+  li {
+    display: inline-block;
+    font-style: italic;
+
+    &:not(:last-child) {
+      margin-right: rem(18px);
+
+      &::after {
+        content: '•';
+        margin-left: rem(20px);
+      }
+    }
+  }
+
+  small {
+    font-size: rem(12px);
+  }
+
+  &__credits {
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    word-spacing: rem(2px);
+    letter-spacing: rem(1.2px);
+  }
+}

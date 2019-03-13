@@ -31,19 +31,22 @@
   &__name {
     font-size: rem(48px);
     line-height: rem(72px);
-    font-family: $notoserifsc-bold;
+    font-family: $font-title;
+    font-weight: 700;
   }
 
   &__description {
     font-size: rem(18px);
     line-height: rem(28px);
-    font-family: $rubik-light;
+    font-family: $font-text;
+    font-weight: 300;
   }
 
   &__more {
     font-size: rem(15px);
     line-height: rem(25px);
-    font-family: $rubik-medium;
+    font-family: $font-text;
+    font-weight: 500;
   }
 
   &__image {
@@ -172,12 +175,14 @@
     }
 
     &-title {
-      font-family: $rubik;
+      font-family: $font-text;
+      // font-weight: 400;
       font-size: rem(25px);
     }
 
     &-description {
-      font-family: $rubik-light;
+      font-family: $font-text;
+      font-weight: 300;
       font-size: rem(18px);
       line-height: rem(28px);
       padding-top: 20px;
@@ -204,7 +209,8 @@
       .work__section-title {
         color: $white;
         text-transform: uppercase;
-        font-family: $rubik-medium;
+        font-family: $font-text;
+        font-weight: 500;
         font-size: rem(23px);
       }
     }
@@ -262,7 +268,8 @@
 
       .work__section-title {
         text-transform: uppercase;
-        font-family: $rubik-medium;
+        font-family: $font-text;
+        font-weight: 500;
         font-size: rem(23px);
       }
     }

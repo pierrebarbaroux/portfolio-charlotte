@@ -11,17 +11,8 @@ $primary: #FEC3A6;
 $hover: #D81E5B;
 
 // Fonts
-$rubik-light: 'Rubik-Light';
-$rubik: 'Rubik-Regular';
-$rubik-medium: 'Rubik-Medium';
-$rubik-bold: 'Rubik-Bold';
-$rubik-black: 'Rubik-Black';
-// ---
-$notoserifsc-light: 'NotoSerifSC-Light';
-$notoserifsc: 'NotoSerifSC-Regular';
-$notoserifsc-medium: 'NotoSerifSC-Medium';
-$notoserifsc-bold: 'NotoSerifSC-Bold';
-$notoserifsc-black: 'NotoSerifSC-Black';
+$font-title: 'Noto Serif SC', serif;
+$font-text: 'Rubik', 'Helvetica Neue', Arial, sans-serif;
 
 // Media queries
 $small: 768px;

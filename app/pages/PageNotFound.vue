@@ -5,9 +5,7 @@
 </template>
 
 <script>
-import 'scripts/base';
-
 export default {
-  title: 'Page Not Found',
+  title: 'Page not found',
 };
 </script>

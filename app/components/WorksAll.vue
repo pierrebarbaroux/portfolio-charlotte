@@ -31,11 +31,44 @@
 </template>
 
 <script>
+import {
+  TweenMax, Power3,
+} from 'gsap/all';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+
 export default {
   props: {
     works: {
       type: Array,
       required: true,
+    },
+  },
+  mounted() {
+    this.animInProjects();
+  },
+  methods: {
+    animInProjects: () => {
+      const controller = new ScrollMagic.Controller();
+      const projects = document.querySelectorAll('.work__content-container > *');
+
+      projects.forEach((project) => {
+        const waitTime = 0;
+        const fadeInProject = TweenMax.fromTo(project, 0.6,
+          { autoAlpha: 0, y: 30 },
+          { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);
+
+        const projectScene = new ScrollMagic.Scene({
+          triggerElement: project,
+          triggerHook: 1,
+          reverse: false,
+        })
+          .setTween(fadeInProject)
+          .on('end', () => {
+            projectScene.destroy();
+          })
+          .addTo(controller);
+      });
     },
   },
 };

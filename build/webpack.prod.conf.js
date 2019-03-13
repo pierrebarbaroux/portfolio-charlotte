@@ -8,7 +8,7 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const utils = require('./utils');
 const config = require('../config');
 const baseWebpackConfig = require('./webpack.base.conf');
@@ -29,9 +29,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
   },
   optimization: {
-    minimizer: [
-      new UglifyJsPlugin(),
-    ],
+    minimizer: [new TerserPlugin()],
     splitChunks: {
       chunks: 'all',
     },
@@ -87,8 +85,8 @@ if (config.build.productionGzip) {
       test: new RegExp(`\\.(${config.build.productionGzipExtensions.join('|')})$`),
       threshold: 10240,
       minRatio: 0.8,
-    })
-);
+    }),
+  );
 }
 
 if (config.build.bundleAnalyzerReport) {

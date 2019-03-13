@@ -1,6 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const utils = require('./utils');
 const config = require('../config');
 const vueLoaderConfig = require('./vue-loader.conf');
@@ -67,7 +67,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // new FaviconsWebpackPlugin(resolve('src/assets/img/sr-logo.png')),
+    new FaviconsWebpackPlugin(resolve('app/assets/images/favicon.png')),
     new VueLoaderPlugin(),
   ],
 };

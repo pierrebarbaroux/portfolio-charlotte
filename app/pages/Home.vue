@@ -1,23 +1,29 @@
 <template>
-  <div class="page page-home">
-    <header class="header header--full">
-      <div class="container header__container">
-        <Nav />
-        <div class="header__content">
-          <h1>
-            Hey,<br>
-            welcome home
-          </h1>
+  <div>
+    <Nav />
+    <div class="page page-home">
+      <header class="header header--full">
+        <div class="container header__container">
+          <div class="header__content">
+            <h1>
+              <div class="header__title header__title-first">
+                Hey,
+              </div>
+              <div class="header__title header__title-second">
+                welcome home
+              </div>
+            </h1>
+          </div>
+          <div class="lateral__text lateral__text--right js-scroll-text">
+            Scroll
+          </div>
         </div>
-        <div class="lateral__text lateral__text--right">
-          Scroll
-        </div>
-      </div>
-    </header>
+      </header>
 
-    <WorksAll :works="works" />
+      <WorksAll :works="works" />
 
-    <Footer />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -25,8 +31,14 @@
 import Nav from 'components/Nav';
 import WorksAll from 'components/WorksAll';
 import Footer from 'components/Footer';
-import 'scripts/base';
+import { TimelineMax, Power3 } from 'gsap';
 import works from '../../static/works.json';
+
+const timeline = new TimelineMax({
+  onComplete: () => {
+    timeline.kill();
+  },
+});
 
 export default {
   title: 'Home',
@@ -41,5 +53,53 @@ export default {
       works,
     };
   },
+  mounted() {
+    this.parseTitle();
+    this.animInTitle();
+    this.animInScrollText();
+  },
+  methods: {
+    parseTitle: () => {
+      const headerTitle = document.querySelectorAll('.header__title');
+      headerTitle.forEach((item) => {
+        const title = item;
+        const initialContent = title.innerHTML.replace(/\s+/g, ' ').trim();
+        const letters = [];
+
+        for (let i = 0; i < initialContent.length; i += 1) {
+          letters.push(initialContent.charAt(i));
+        }
+
+        const wrappedLetters = letters
+          .filter(letter => (letter && letter !== '\n'))
+          .map(letter => (letter.trim() !== '' ? (`<span class="intro__letter">${letter}</span>`) : ' '))
+          .join('');
+
+        title.innerHTML = wrappedLetters;
+      });
+    },
+    animInTitle: () => {
+      const letters = document.querySelectorAll('.intro__letter');
+      const waitTime = 0.2;
+      letters.forEach((letter, i) => {
+        timeline.fromTo(letter, 1.2,
+          { autoAlpha: 0, y: 200 },
+          { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, i * 0.03 + waitTime);
+      });
+    },
+    animInScrollText: () => {
+      const scrollText = document.querySelector('.js-scroll-text');
+      const waitTime = 1.5;
+      timeline.fromTo(scrollText, 0.8,
+        { autoAlpha: 0, y: -30 },
+        { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);
+    },
+  },
 };
 </script>
+
+<style>
+.intro__letter {
+  display: inline-block;
+}
+</style>

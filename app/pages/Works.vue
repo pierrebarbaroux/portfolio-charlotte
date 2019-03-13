@@ -1,9 +1,11 @@
 <template>
-  <div class="page page-works-all">
+  <div>
     <Nav />
-    <section class="works-all">
-      <WorksAll :works="works" />
-    </section>
+    <div class="page page-works-all">
+      <section class="works-all">
+        <WorksAll :works="works" />
+      </section>
+    </div>
   </div>
 </template>
 

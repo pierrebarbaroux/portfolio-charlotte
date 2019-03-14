@@ -1,106 +1,114 @@
 <template>
-  <div class="page page-works-single">
+  <div>
     <Nav />
 
-    <section class="works-single">
-      <div class="work__intro">
-        <div class="work__image work__intro-image container container--landing">
-          <img :src="filteredData.landing">
-        </div>
-        <div class="container">
-          <div class="work__intro-container">
-            <div class="work__intro-header">
-              <div class="work__type">
-                {{ filteredData.type }} • {{ filteredData.year }}
+    <div class="page page-works-single">
+      <section class="works-single">
+        <div class="work__intro">
+          <div class="work__image work__intro-image container container--landing">
+            <img :src="filteredData.landing">
+          </div>
+          <div class="container">
+            <div class="work__intro-container">
+              <div class="work__intro-header">
+                <div class="work__type">
+                  {{ filteredData.type }} • {{ filteredData.year }}
+                </div>
+                <h2 class="work__name">
+                  {{ filteredData.title }}
+                </h2>
               </div>
-              <h2 class="work__name">
-                {{ filteredData.title }}
-              </h2>
-            </div>
 
-            <div class="work__intro-content">
-              <p class="work__description">
-                {{ filteredData.description }}
-              </p>
-              <div class="work__more">
-                test
+              <div class="work__intro-content">
+                <p class="work__description">
+                  {{ filteredData.description }}
+                </p>
+                <div class="work__more">
+                  test
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="work__content">
-        <div
-          v-for="(section, indexSection) in filteredData.sections"
-          :key="indexSection"
-          :class="`work__section ${section.class}`"
-        >
-          <div class="container">
-            <div
-              v-if="section.class === 'work-explanation'"
-              class="work__bulle"
-            >
-              /
-            </div>
-
-            <div :class="`work__section-container ${section.class}`">
-              <h2 class="work__section-title">
-                {{ section.title }}
-              </h2>
-
+        <div class="work__content">
+          <div
+            v-for="(section, indexSection) in filteredData.sections"
+            :key="indexSection"
+            :class="`work__section ${section.class}`"
+          >
+            <div class="container">
               <div
                 v-if="section.class === 'work-explanation'"
-                class="work__section-description"
+                class="work__bulle"
               >
-                {{ section.description }}
+                /
               </div>
-            </div>
 
-            <div class="work__assets">
-              <div
-                v-for="(asset, indexAsset) in section.assets"
-                :key="indexAsset"
-              >
-                <img
-                  :src="asset.src"
-                  :alt="asset.alt"
-                  :title="asset.title"
-                  v-if="asset.type === 'image'"
+              <div :class="`work__section-container ${section.class}`">
+                <h2 class="work__section-title">
+                  {{ section.title }}
+                </h2>
+
+                <div
+                  v-if="section.class === 'work-explanation'"
+                  class="work__section-description"
                 >
-                <video autoplay="" loop="" v-if="asset.type === 'video'">
-                  <source :src="asset.src">
-                  <p class="warning">Your browser does not support HTML5 video.</p>
-                </video>
+                  {{ section.description }}
+                </div>
+              </div>
+
+              <div class="work__assets">
+                <div
+                  v-for="(asset, indexAsset) in section.assets"
+                  :key="indexAsset"
+                >
+                  <img
+                    v-if="asset.type === 'image'"
+                    :src="asset.src"
+                    :alt="asset.alt"
+                    :title="asset.title"
+                  >
+                  <video
+                    v-if="asset.type === 'video'"
+                    autoplay=""
+                    loop=""
+                  >
+                    <source :src="asset.src">
+                    <p class="warning">
+                      Your browser does not support HTML5 video.
+                    </p>
+                  </video>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="work__next">
-        <div class="work">
-          <a
-            :href="`/works/${nextProject.slug}`"
-          >
-            <div class="work__image">
-              <img :src="nextProject.landing">
-            </div>
-          </a>
-
-          <div class="work__content">
-            <div class="work__content-container">
-              <div class="work__type">
-                Next project
+        <div class="work__next">
+          <div class="work">
+            <a
+              :href="`/works/${nextProject.slug}`"
+            >
+              <div class="work__image">
+                <img :src="nextProject.landing">
               </div>
-              <h2 class="work__name">
-                {{ nextProject.title }}
-              </h2>
+            </a>
+
+            <div class="work__content">
+              <div class="work__content-container">
+                <div class="work__type">
+                  Next project
+                </div>
+                <h2 class="work__name">
+                  {{ nextProject.title }}
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <Footer />
   </div>

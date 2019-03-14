@@ -11,14 +11,17 @@
                 I'm Charlotte, a french digital student designer.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                I am 24 years old and I am living in Paris.
+                I am currently involved in the fourth year in HETIC, a web industry school.
+                I am pretty passionate about digital and graphic design.
+                I am currently seeking for a six-month internship as a Digital Designer, from June to November 2019.
               </p>
             </div>
           </div>
         </div>
       </header>
+
+      <p>Last year I joined Go and Up, a parisian independent digital agency as the assistant of the  Creative Director. I was working for 4 months for various customers on UX and UI design tasks, equally for applications and websites. I loved working with this awesome team and I am looking for a new agency to welcome me!</p>
 
       <Footer />
     </div>

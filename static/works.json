@@ -365,7 +365,7 @@
         ]
       },
       {
-        "class": "work-explanation",
+        "class": "work-explanation work-explanation-fullwidth",
         "title": "Schedule your appointment",
         "description": "A short series of questions allows the nurse to easily schedule his medical visits to his different patients.",
         "assets": [
@@ -436,14 +436,14 @@
         "description": "A series of gestures allows the nurse to manage his schedule, both with simplicity and speed.",
         "assets": [
           {
-            "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/16_Planning.png",
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552596544/portfolio-charlotte/works/bokee/videos/01_Planning.mp4",
             "alt": "",
             "title": ""
           },
           {
-            "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/17_Slide_up_details.png",
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552596544/portfolio-charlotte/works/bokee/videos/02_Planning.mp4",
             "alt": "",
             "title": ""
           }

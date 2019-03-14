@@ -57,16 +57,21 @@
               </div>
             </div>
 
-            <div class="work__pictures">
+            <div class="work__assets">
               <div
-                v-for="(picture, indexPicture) in section.pictures"
-                :key="indexPicture"
+                v-for="(asset, indexAsset) in section.assets"
+                :key="indexAsset"
               >
                 <img
-                  :src="picture.src"
-                  alt=""
-                  title=""
+                  :src="asset.src"
+                  :alt="asset.alt"
+                  :title="asset.title"
+                  v-if="asset.type === 'image'"
                 >
+                <video autoplay="" loop="" v-if="asset.type === 'video'">
+                  <source :src="asset.src">
+                  <p class="warning">Your browser does not support HTML5 video.</p>
+                </video>
               </div>
             </div>
           </div>

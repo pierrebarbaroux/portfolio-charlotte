@@ -9,7 +9,7 @@ import PageNotFound from 'pages/PageNotFound';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   hash: false,
   routes: [
@@ -53,3 +53,5 @@ export default new Router({
     return { x: 0, y: 0 };
   },
 });
+
+export default router;

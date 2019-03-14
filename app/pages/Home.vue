@@ -80,10 +80,10 @@ export default {
     },
     animInTitle: () => {
       const letters = document.querySelectorAll('.intro__letter');
-      const waitTime = 0.2;
+      const waitTime = 0.1;
       letters.forEach((letter, i) => {
-        timeline.fromTo(letter, 1.2,
-          { autoAlpha: 0, y: 200 },
+        timeline.fromTo(letter, 1.5,
+          { autoAlpha: 0, y: 250 },
           { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, i * 0.03 + waitTime);
       });
     },

@@ -110,7 +110,7 @@
     }
   }
 
-  &__pictures {
+  &__assets {
     padding-top: 100px;
     text-align: center;
     display: flex;
@@ -134,6 +134,15 @@
     }
 
     img {
+      width: 100%;
+      max-width: 300px;
+
+      @include small {
+        width: 60%;
+      }
+    }
+
+    video {
       width: 100%;
       max-width: 300px;
 
@@ -199,7 +208,7 @@
       }
 
       &.background-red {
-        background: #CD5334;
+        background: #BC412B;
       }
 
       &.background-green {
@@ -231,8 +240,8 @@
       }
     }
 
-    // Type: work-picture-fullwidth
-    &.work-picture-fullwidth {
+    // Type: work-asset-fullwidth
+    &.work-asset-fullwidth {
       width: 100vw;
       position: relative;
       height: 700px;
@@ -242,19 +251,19 @@
         height: 400px;
         padding: rem(30px) 0;
 
-        img {
+        img, video {
           width: 100%;
         }
       }
 
-      .work__pictures {
+      .work__assets {
         padding-top: 0;
 
         > div {
           position: absolute;
           left: 0;
 
-          > img {
+          > img, > video {
             max-width: 100%;
           }
         }

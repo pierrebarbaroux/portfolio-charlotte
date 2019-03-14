@@ -9,7 +9,7 @@ const app = express();
 
 // serve pure static assets
 const staticPath = path.posix.join(config.build.assetsPublicPath, config.build.assetsSubDirectory);
-app.use(staticPath, express.static(path.resolve(__dirname, '..', 'dist/static')));
+app.use(staticPath, express.static(path.resolve(__dirname, '..', 'dist/')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'dist/index.html'));

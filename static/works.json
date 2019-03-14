@@ -7,24 +7,27 @@
     "year": "2018",
     "client": "/",
     "type": "UX UI Design • Web application",
-    "role": "UX UI Designer",
+    "role": "UX/UI Designer",
     "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/oystr/oystr-landing.jpg",
     "sections": [
       {
         "class": "work-fullwidth background-blue",
         "title": "First opening",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/01_Chargement.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/02_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/03_Onboarding.png",
             "alt": "",
             "title": ""
@@ -35,13 +38,15 @@
         "class": "work-explanation",
         "title": "Discover choices",
         "description": "Find inspiration for your cultural outings among our Oystr pathfinders' selections.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/04_Selections.jpg",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/05_Details_selection.jpg",
             "alt": "",
             "title": ""
@@ -52,18 +57,21 @@
         "class": "work-explanation",
         "title": "Discover places",
         "description": "Let Oystr's users guide you in Nantes cultural best places around you and check out our after-visit recommandations.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/06_Liste.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/07_Liste_details.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/08_Fiche_lieu.png",
             "alt": "",
             "title": ""
@@ -71,9 +79,10 @@
         ]
       },
       {
-        "class": "work-picture-fullwidth",
-        "pictures": [
+        "class": "work-asset-fullwidth",
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/oystr/oystr-nantes.jpg",
             "alt": "",
             "title": ""
@@ -84,13 +93,15 @@
         "class": "work-explanation",
         "title": "Enjoy the map and filters",
         "description": "Use the map to discover cultural treasures around you, by filtering your search to make it just the way you want it!",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/09_Map.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/10_Filtres.png",
             "alt": "",
             "title": ""
@@ -100,28 +111,33 @@
       {
         "class": "work-slider-fullwidth",
         "title": "Desktop version",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/01_Chargement.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/02_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/03_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/06_Map_hidden.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/07_Map.png",
             "alt": "",
             "title": ""
@@ -131,13 +147,15 @@
       {
         "class": "work-fullwidth background-blue",
         "title": "Selections",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618956/portfolio-charlotte/works/oystr/screens/desktop/04_Home.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618957/portfolio-charlotte/works/oystr/screens/desktop/05_Details_selection.png",
             "alt": "",
             "title": ""
@@ -149,13 +167,112 @@
   {
     "slug": "pompidou",
     "title": "Centre Pompidou app redesign",
-    "description": "/",
+    "description": "The Centre Pompidou has an application to prepare, support and extend the users' visit at home. It includes a lot of information, whether it be on temporary exhibitions, permanent collections or the Centre's news. However, its lack of clarity makes it complex for users to handle. With this redesign, a new hierarchy of information is proposed, making it more intuitive and accessible for users.",
     "link": "https://TOCHANGE.fr",
     "year": "2018",
     "client": "/",
-    "type": "UX UI Design • Dashboard interface",
-    "role": "UI Designer",
-    "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/pompidou/pompidou-landing.jpg"
+    "type": "UX UI Design • Mobile application",
+    "role": "UX/UI Designer",
+    "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/pompidou/pompidou-landing.jpg",
+    "sections": [
+      {
+        "class": "work-fullwidth background-red",
+        "title": "First opening",
+        "assets": [
+          {
+            "type": "image",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1552592950/portfolio-charlotte/works/pompidou/screens/01_Loading.jpg",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "type": "image",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1552592950/portfolio-charlotte/works/pompidou/screens/02_Preferences.jpg",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "class": "work-explanation",
+        "title": "Find the news, exhibitions and permanent collections of the museum",
+        "description": "Discover the latest news, let yourself be tempted by the discovery of the major works of the Centre Pompidou and don't miss out the exhibitions you like!",
+        "assets": [
+          {
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/home_scroll_AR.mp4",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591803/portfolio-charlotte/works/pompidou/videos/expo_scroll_AR.mp4",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "class": "work-asset-fullwidth",
+        "assets": [
+          {
+            "type": "image",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/pompidou/pompidou-inside.jpg",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "class": "work-explanation",
+        "title": "Plan your visit",
+        "description": "To discover the museum and its collection of modern and contemporary art with ease, buy your ticket in advance via the application! Choose your ticket and visit date, add it to your shopping cart, pay and visit!",
+        "assets": [
+          {
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/billetterie_scroll_AR.mp4",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591804/portfolio-charlotte/works/pompidou/videos/visite_scroll_AR.mp4",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "class": "work-explanation",
+        "title": "A cultural guide in your smartphone",
+        "description": "Easily access the audio explanations of the works of art you see, and complete your visit by listening to the audio guide!",
+        "assets": [
+          {
+            "type": "video",
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591805/portfolio-charlotte/works/pompidou/videos/tunnel_achat.mp4",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "type": "image",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1552591775/portfolio-charlotte/works/pompidou/screens/14_Audioguide.png",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      },
+      {
+        "class": "work-asset-fullwidth",
+        "assets": [
+          {
+            "type": "image",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1552591819/portfolio-charlotte/works/pompidou/pompidou-mockup.jpg",
+            "alt": "",
+            "title": ""
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "bokee",
@@ -165,19 +282,21 @@
     "year": "2018",
     "client": "/",
     "type": "UX UI Design • Mobile application",
-    "role": "UX UI Designer",
+    "role": "UX/UI Designer",
     "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556357/portfolio-charlotte/works/bokee/bokee-landing.jpg",
     "sections": [
       {
         "class": "work-fullwidth background-green",
         "title": "First opening",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/00_Chargement.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/01_Welcome.png",
             "alt": "",
             "title": ""
@@ -188,23 +307,27 @@
         "class": "work-explanation",
         "title": "Onboarding",
         "description": "It allows to understand, at a glance, the spectrum of action of the application: adding patients, scheduling appointments, consulting the schedule and accessing the itinerary to visit the next patient.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/02_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/03_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/04_Onboarding.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/05_Onboarding.png",
             "alt": "",
             "title": ""
@@ -212,9 +335,10 @@
         ]
       },
       {
-        "class": "work-picture-fullwidth",
-        "pictures": [
+        "class": "work-asset-fullwidth",
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551635296/portfolio-charlotte/works/bokee/bokee-mockup.png",
             "alt": "",
             "title": ""
@@ -225,13 +349,15 @@
         "class": "work-explanation",
         "title": "Create your patient card",
         "description": "Each patient has his card, which allows the nurse to easily find the coordinates and monitor the medical care of the patients.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/06_Liste_patients_vide.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/07_Infos_patient.png",
             "alt": "",
             "title": ""
@@ -242,43 +368,51 @@
         "class": "work-explanation",
         "title": "Schedule your appointment",
         "description": "A short series of questions allows the nurse to easily schedule his medical visits to his different patients.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/08_Patient_ajoute.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/09_Nom_soin.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/10_Duree.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/11_Frequence.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/12_Recap.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/13_Creneau.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/14_Recap_bis.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/15_Fiche_patient.png",
             "alt": "",
             "title": ""
@@ -286,9 +420,10 @@
         ]
       },
       {
-        "class": "work-picture-fullwidth",
-        "pictures": [
+        "class": "work-asset-fullwidth",
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/bokee/bokee-medical.jpg",
             "alt": "",
             "title": ""
@@ -299,13 +434,15 @@
         "class": "work-explanation",
         "title": "Easily manage your planning",
         "description": "A series of gestures allows the nurse to manage his schedule, both with simplicity and speed.",
-        "pictures": [
+        "assets": [
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/16_Planning.png",
             "alt": "",
             "title": ""
           },
           {
+            "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/17_Slide_up_details.png",
             "alt": "",
             "title": ""

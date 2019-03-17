@@ -20,11 +20,14 @@
               </div>
 
               <div class="work__intro-content">
-                <p class="work__description">
+                <p
+                  class="work__description"
+                  v-html="filteredData.description"
+                >
                   {{ filteredData.description }}
                 </p>
                 <div class="work__more">
-                  test
+                  {{ filteredData.target }} - Role : {{ filteredData.role }}
                 </div>
               </div>
             </div>
@@ -38,13 +41,6 @@
             :class="`work__section ${section.class}`"
           >
             <div class="container">
-              <div
-                v-if="section.class === 'work-explanation'"
-                class="work__bulle"
-              >
-                /
-              </div>
-
               <div :class="`work__section-container ${section.class}`">
                 <h2 class="work__section-title">
                   {{ section.title }}
@@ -59,6 +55,12 @@
               </div>
 
               <div class="work__assets">
+                <div
+                  v-if="section.class === 'work-explanation'"
+                  class="work__blob"
+                >
+                  <!-- <img src="../assets/images/blob-1.svg"> -->
+                </div>
                 <div
                   v-for="(asset, indexAsset) in section.assets"
                   :key="indexAsset"

@@ -3,7 +3,7 @@
     "airbnb-base",
     "plugin:vue/recommended"
   ],
-  "plugins": ["vue"],
+  "plugins": ["vue", "json"],
   "env": {
       "browser": true,
       "node": true
@@ -26,8 +26,5 @@
     "no-param-reassign": ["error", {
       "props": true, "ignorePropertyModificationsFor": ["state"]
     }]
-  },
-  "globals": {
-    "sr": true
   }
 }

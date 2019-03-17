@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import ScrollReveal from 'scrollreveal';
 import VueScrollTo from 'vue-scrollto';
 import router from './router';
 import titleMixin from './mixins/title';
@@ -16,8 +15,6 @@ Vue.use(VueScrollTo, {
   offset: 0,
   easing: 'ease-in-out',
 });
-
-window.sr = ScrollReveal();
 
 /* eslint-disable no-new */
 new Vue({

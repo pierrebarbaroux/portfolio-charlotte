@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="266px" height="250px" viewBox="0 0 266 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 265.306122 0 265.306122 250 0 250"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-710.000000, -1391.000000)">
+            <g id="Group-2" transform="translate(710.000000, 1391.000000)">
+                <g id="Bulle">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M209.200549,204.682064 C149.38194,264.554287 104.572521,265.377579 44.7539122,205.505356 C-15.0646969,145.633133 -14.8443031,100.1816 44.974306,40.3093776 C104.792915,-19.5628452 138.459374,-4.34129644 214.986073,31.7474434 C295.272167,69.6091392 269.018411,144.810589 209.200549,204.682064" id="Fill-1" fill="#E7D8C9" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

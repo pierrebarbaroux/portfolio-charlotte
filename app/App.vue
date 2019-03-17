@@ -3,9 +3,7 @@
     <Preloader
       v-if="loading"
     />
-    <transition name="fade">
-      <router-view />
-    </transition>
+    <router-view />
   </div>
 </template>
 
@@ -40,7 +38,7 @@ export default {
     scrollInit() {
       const section = document.querySelector('.page');
       const smooth = new Smooth({
-        native: true,
+        native: false,
         section,
         preload: false,
         preventTouch: false,

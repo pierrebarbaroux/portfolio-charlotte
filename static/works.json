@@ -3,9 +3,10 @@
     "slug": "oystr",
     "title": "Oystr, what to do in Nantes?",
     "description": "Oystr is an application allowing the users to discover the cultural treasures of Nantes, a French city. Moreover, the app aims to propose a unique travel experience based on geo-tracking and information sharing, as well as opening-up the culture and make it accessible to all. Thanks to Oystr, you won't miss out thrilling experiences anymore!",
-    "link": "https://oystr.fr",
+    "link": "/",
     "year": "2018",
     "client": "/",
+    "target": "School project",
     "type": "UX UI Design • Web application",
     "role": "UX/UI Designer",
     "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/oystr/oystr-landing.jpg",
@@ -17,20 +18,20 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/01_Chargement.png",
-            "alt": "",
-            "title": ""
+            "alt": "Loading Oystr's application",
+            "title": "Loading"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/02_Onboarding.png",
-            "alt": "",
-            "title": ""
+            "alt": "Discover places around you",
+            "title": "Onboarding step 1"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/03_Onboarding.png",
-            "alt": "",
-            "title": ""
+            "alt": "Never miss out thrilling experiences anymore",
+            "title": "Onboarding step 2"
           }
         ]
       },
@@ -42,14 +43,14 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/04_Selections.jpg",
-            "alt": "",
-            "title": ""
+            "alt": "Selection screen, Oystr's application",
+            "title": "Oystr's selections"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619209/portfolio-charlotte/works/oystr/screens/mobile/05_Details_selection.jpg",
-            "alt": "",
-            "title": ""
+            "alt": "Oystr's selections, catch some fresh air",
+            "title": "Selection's sheet"
           }
         ]
       },
@@ -61,20 +62,20 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/06_Liste.png",
-            "alt": "",
-            "title": ""
+            "alt": "Where to go out in Nantes?",
+            "title": "Places' list"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/07_Liste_details.png",
-            "alt": "",
-            "title": ""
+            "alt": "Proposals for additional locations",
+            "title": "Detailed places' list"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/08_Fiche_lieu.png",
-            "alt": "",
-            "title": ""
+            "alt": "Musée d'art de Nantes, descriptive sheet",
+            "title": "Place's sheet"
           }
         ]
       },
@@ -84,8 +85,8 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/oystr/oystr-nantes.jpg",
-            "alt": "",
-            "title": ""
+            "alt": "Yellow building in Nantes",
+            "title": "Architecture photography of Nantes"
           }
         ]
       },
@@ -97,14 +98,14 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/09_Map.png",
-            "alt": "",
-            "title": ""
+            "alt": "Places around you",
+            "title": "Oystr's map"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/10_Filtres.png",
-            "alt": "",
-            "title": ""
+            "alt": "Filter my search",
+            "title": "Filters"
           }
         ]
       },
@@ -115,32 +116,32 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/01_Chargement.png",
-            "alt": "",
-            "title": ""
+            "alt": "Oystr’s loading on desktop",
+            "title": "Loading desktop"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/02_Onboarding.png",
-            "alt": "",
-            "title": ""
+            "alt": "Discover the places around you, on desktop",
+            "title": "Onboarding desktop step 1"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/03_Onboarding.png",
-            "alt": "",
-            "title": ""
+            "alt": "Never miss out thrilling experiences anymore, on desktop",
+            "title": "Onboarding desktop step 2"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/06_Map_hidden.png",
-            "alt": "",
-            "title": ""
+            "alt": "Selections screen, Oystr website",
+            "title": "Oystr desktop selections"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/07_Map.png",
-            "alt": "",
-            "title": ""
+            "alt": "Oystr’s selection, catch some fresh air, website",
+            "title": "Selection sheet, on desktop"
           }
         ]
       },
@@ -167,10 +168,11 @@
   {
     "slug": "pompidou",
     "title": "Centre Pompidou app redesign",
-    "description": "The Centre Pompidou has an application to prepare, support and extend the users' visit at home. It includes a lot of information, whether it be on temporary exhibitions, permanent collections or the Centre's news. However, its lack of clarity makes it complex for users to handle. With this redesign, a new hierarchy of information is proposed, making it more intuitive and accessible for users.",
-    "link": "https://TOCHANGE.fr",
+    "description": "The Centre Pompidou has an application to prepare, support and extend the users' visit at home. It includes a lot of information, whether it be on temporary exhibitions, permanent collections or the Centre's news. However, its lack of clarity makes it complex for users to handle.<br><br>With this redesign, a new hierarchy of information is proposed, making it more intuitive and accessible for users.",
+    "link": "/",
     "year": "2018",
     "client": "/",
+    "target": "Personal project",
     "type": "UX UI Design • Mobile application",
     "role": "UX/UI Designer",
     "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/pompidou/pompidou-landing.jpg",
@@ -182,14 +184,14 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1552592950/portfolio-charlotte/works/pompidou/screens/01_Loading.jpg",
-            "alt": "",
-            "title": ""
+            "alt": "Photo escalators Pompidou",
+            "title": "Centre Pompidou"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1552592950/portfolio-charlotte/works/pompidou/screens/02_Preferences.jpg",
-            "alt": "",
-            "title": ""
+            "alt": "Loading Pompidou’s application",
+            "title": "Loading Pompidou"
           }
         ]
       },
@@ -200,15 +202,11 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/home_scroll_AR.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/home_scroll_AR.mp4"
           },
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591803/portfolio-charlotte/works/pompidou/videos/expo_scroll_AR.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591803/portfolio-charlotte/works/pompidou/videos/expo_scroll_AR.mp4"
           }
         ]
       },
@@ -230,15 +228,11 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/billetterie_scroll_AR.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/billetterie_scroll_AR.mp4"
           },
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591804/portfolio-charlotte/works/pompidou/videos/visite_scroll_AR.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591804/portfolio-charlotte/works/pompidou/videos/visite_scroll_AR.mp4"
           }
         ]
       },
@@ -249,14 +243,12 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591805/portfolio-charlotte/works/pompidou/videos/tunnel_achat.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591805/portfolio-charlotte/works/pompidou/videos/tunnel_achat.mp4"
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1552591775/portfolio-charlotte/works/pompidou/screens/14_Audioguide.png",
-            "alt": "",
+            "alt": "Audioguide screen, Pompidou’s application",
             "title": ""
           }
         ]
@@ -267,7 +259,7 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1552591819/portfolio-charlotte/works/pompidou/pompidou-mockup.jpg",
-            "alt": "",
+            "alt": "Mockup screens, Pompidou’s application",
             "title": ""
           }
         ]
@@ -278,9 +270,10 @@
     "slug": "bokee",
     "title": "Bokee, liberal nurses' assistant",
     "description": "Bokee is a mobile application resulting from a design thinking approach around healthcare. It aims to optimize the use of the time of the liberal nurses who, in one day, divide their time between the care carried out with their patients, and the numerous car journeys.",
-    "link": "https://TOCHANGE.fr",
+    "link": "/",
     "year": "2018",
     "client": "/",
+    "target": "School project",
     "type": "UX UI Design • Mobile application",
     "role": "UX/UI Designer",
     "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556357/portfolio-charlotte/works/bokee/bokee-landing.jpg",

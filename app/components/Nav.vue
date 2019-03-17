@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav js-nav">
+  <nav class="nav">
     <p class="nav__left">
       <router-link to="/">
         Cha.
@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     animInNav: () => {
-      const nav = document.querySelector('.js-nav');
+      const nav = document.querySelector('.nav');
       const waitTime = 1.3;
       timeline.fromTo(nav, 1.5,
         { autoAlpha: 0, y: -30 },

@@ -5,9 +5,13 @@
   text-align: left;
 
   &__container {
-    padding: 80px;
-    width: 90%;
+    padding: rem(30px);
+    width: 100%;
     margin: auto;
+
+    @include small {
+      padding: rem(60px) 0;
+    }
   }
 
   &__content {
@@ -20,11 +24,21 @@
     line-height: rem(72px);
     font-family: $font-title;
     font-weight: 700;
+
+    @include small {
+      font-size: rem(35px);
+      line-height: rem(52px);
+    }
   }
 
   &__contact {
     font-size: rem(23px);
     line-height: rem(35px);
     margin-top: 50px;
+
+    @include small {
+      font-size: rem(16px);
+      line-height: rem(26px);
+    }
   }
 }

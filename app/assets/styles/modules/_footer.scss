@@ -6,6 +6,11 @@
   line-height: 1.5;
   margin-top: 30px;
 
+  @include small {
+    width: 100%;
+    text-align: center;
+  }
+
   &--colored {
     background: $primary;
     color: $white;
@@ -15,12 +20,17 @@
     padding: rem(80px);
 
     @include small {
-      padding: rem(30px);
+      padding: rem(30px) rem(30px) rem(60px) rem(30px);
     }
   }
 
   &__nav {
     font-size: rem(18px);
+
+    @include small {
+      font-size: rem(16px);
+      padding-top: rem(20px);
+    }
   }
 
   li {
@@ -47,5 +57,9 @@
     text-transform: uppercase;
     word-spacing: rem(2px);
     letter-spacing: rem(1.2px);
+
+    @include small {
+      margin-top: 15px;
+    }
   }
 }

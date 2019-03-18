@@ -11,6 +11,10 @@ body, .is-virtual-scroll {
   transition: transform .6s, -webkit-transform .6s;
   z-index: 100;
 
+  @include small {
+    display: none;
+  }
+
   &.vs-vertical {
     width: 15px;
     height: 100%;

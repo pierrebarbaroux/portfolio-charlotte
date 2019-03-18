@@ -40,11 +40,15 @@ export default {
     scrollInit() {
       const section = document.querySelector('.page');
       this.smooth = new Smooth({
-        preload: true,
         native: false,
         preventTouch: true,
         section,
         ease: 0.05,
+        vs: {
+          touchMultiplier: 4,
+          preventTouch: true,
+        },
+        preload: true,
       });
       this.smooth.init();
     },

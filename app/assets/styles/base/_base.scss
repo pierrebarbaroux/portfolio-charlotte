@@ -10,6 +10,11 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  position: fixed;
+  -webkit-overflow-scrolling: touch;
+}
+
 * {
   box-sizing: border-box;
 }

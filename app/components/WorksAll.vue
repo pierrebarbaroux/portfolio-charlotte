@@ -5,7 +5,10 @@
       :key="work.slug"
       class="work"
     >
-      <router-link :to="`/works/${work.slug}`">
+      <router-link
+        :to="`/works/${work.slug}`"
+        :aria-label="`${work.title}`"
+      >
         <div class="work__image">
           <img :src="work.landing">
         </div>

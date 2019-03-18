@@ -6,7 +6,10 @@
       <section class="works-single">
         <div class="work__intro">
           <div class="work__image work__intro-image container container--landing">
-            <img :src="filteredData.landing">
+            <img
+              :src="filteredData.landing"
+              :alt="`${filteredData.title} landing image`"
+            >
           </div>
           <div class="container">
             <div class="work__intro-container">
@@ -90,6 +93,7 @@
           <div class="work">
             <a
               :href="`/works/${nextProject.slug}`"
+              :aria-label="`${nextProject.title}`"
             >
               <div class="work__image">
                 <img :src="nextProject.landing">

@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
-import router from './router';
+
+import App from './App';
 import titleMixin from './mixins/title';
 import descriptionMixin from './mixins/description';
-import App from './App';
-
+import router from './router';
 import './assets/styles/app.scss';
 
 Vue.mixin(titleMixin);
@@ -18,7 +18,6 @@ Vue.use(VueScrollTo, {
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
   render: h => h(App),
-});
+}).$mount('#app');

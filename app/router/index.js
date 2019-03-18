@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from 'pages/Home';
+
 import About from 'pages/About';
-import WorksLayout from 'components/layouts/WorksLayout';
-import Works from 'pages/Works';
-import WorksSingle from 'pages/WorksSingle';
+import Home from 'pages/Home';
 import PageNotFound from 'pages/PageNotFound';
+import Works from 'pages/Works';
+import WorksLayout from 'components/layouts/WorksLayout';
+import WorksSingle from 'pages/WorksSingle';
 
 Vue.use(Router);
 
@@ -43,7 +44,6 @@ const router = new Router({
       path: '*',
       name: 'Not Found',
       component: PageNotFound,
-      title: 'Not Found',
     },
   ],
   scrollBehavior(to, from, savedPosition) {

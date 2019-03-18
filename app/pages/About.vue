@@ -17,16 +17,16 @@
                 I am currently seeking for a six-month internship as a Digital Designer, from June to November 2019.
               </p>
             </div>
+            <!-- <div class="photo"></div> -->
           </div>
         </div>
       </header>
-
 
       <div class="container">
         <div class="work__intro-container">
           <div class="work__intro-header">
             <h2 class="work__name">
-              Latest experience
+              Latest<br>experience
             </h2>
           </div>
           <div class="work__intro-content">
@@ -73,9 +73,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.myself {
-  width: 50%;
-}
-</style>

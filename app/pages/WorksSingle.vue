@@ -47,7 +47,7 @@
                 </h2>
 
                 <div
-                  v-if="section.class === 'work-explanation'"
+                  v-if="section.class === 'work-explanation' || section.class === 'work-explanation work-explanation-fullwidth'"
                   class="work__section-description"
                 >
                   {{ section.description }}
@@ -69,7 +69,6 @@
                     v-if="asset.type === 'image'"
                     :src="asset.src"
                     :alt="asset.alt"
-                    :title="asset.title"
                   >
                   <video
                     v-if="asset.type === 'video'"
@@ -110,9 +109,9 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <Footer />
+      <Footer />
+    </div>
   </div>
 </template>
 

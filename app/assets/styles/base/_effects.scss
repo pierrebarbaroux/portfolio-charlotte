@@ -1,0 +1,18 @@
+.fade-enter-active {
+  animation: slide-up .4s ease;
+}
+.fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes slide-up {
+  from {
+      transform: translateY(-100px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}

@@ -1,14 +1,20 @@
 <template>
   <nav class="nav">
     <p class="nav__left">
-      <router-link to="/">
+      <router-link
+        to="/"
+        title="Charlotte Sieess"
+      >
         Cha.
       </router-link>
     </p>
     <div class="nav__right">
       <ul>
         <li>
-          <router-link to="/about">
+          <router-link
+            to="/about"
+            title="About"
+          >
             About
           </router-link>
         </li>
@@ -19,28 +25,22 @@
 
 <script>
 import { TimelineMax, Power3 } from 'gsap';
-import ScrollMagic from 'scrollmagic';
 
-const timeline = new TimelineMax({
-  onComplete: () => {
-    timeline.kill();
-  },
-});
 
 export default {
-  created() {
-    this.animInNav();
-  },
-  updated() {
-    this.animInNav();
-  },
   mounted() {
     this.animInNav();
   },
   methods: {
     animInNav: () => {
+      const timeline = new TimelineMax({
+        onComplete: () => {
+          timeline.kill();
+        },
+      });
+
       const nav = document.querySelector('.nav');
-      const waitTime = 1.3;
+      const waitTime = 1.0;
       timeline.fromTo(nav, 1.5,
         { autoAlpha: 0, y: -30 },
         { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);

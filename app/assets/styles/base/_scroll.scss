@@ -1,0 +1,35 @@
+body, .is-virtual-scroll {
+  overflow: hidden;
+}
+
+.vs-scrollbar {
+  display: block;
+  position: absolute;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+  z-index: 100;
+
+  &.vs-vertical {
+    width: 15px;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    bottom: 0;
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+
+    &:hover {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .vs-scrolldrag {
+    width: 100%;
+    height: auto;
+    background: $black;
+    cursor: pointer;
+  }
+}

@@ -34,12 +34,6 @@ import Footer from 'components/Footer';
 import { TimelineMax, Power3 } from 'gsap';
 import works from '../../static/works.json';
 
-const timeline = new TimelineMax({
-  onComplete: () => {
-    timeline.kill();
-  },
-});
-
 export default {
   title: 'Home',
   description: '',
@@ -79,8 +73,13 @@ export default {
       });
     },
     animInTitle: () => {
+      const timeline = new TimelineMax({
+        onComplete: () => {
+          timeline.kill();
+        },
+      });
       const letters = document.querySelectorAll('.intro__letter');
-      const waitTime = 0.1;
+      const waitTime = 0;
       letters.forEach((letter, i) => {
         timeline.fromTo(letter, 1.5,
           { autoAlpha: 0, y: 250 },
@@ -88,8 +87,13 @@ export default {
       });
     },
     animInScrollText: () => {
+      const timeline = new TimelineMax({
+        onComplete: () => {
+          timeline.kill();
+        },
+      });
       const scrollText = document.querySelector('.js-scroll-text');
-      const waitTime = 1.5;
+      const waitTime = 1.3;
       timeline.fromTo(scrollText, 0.8,
         { autoAlpha: 0, y: -30 },
         { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);

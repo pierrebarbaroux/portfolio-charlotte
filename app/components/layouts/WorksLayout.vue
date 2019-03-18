@@ -1,7 +1,5 @@
 <template>
-  <transition name="fade">
-    <router-view :works="works" />
-  </transition>
+  <router-view :works="works" />
 </template>
 
 <script>

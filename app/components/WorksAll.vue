@@ -56,7 +56,8 @@ export default {
         const waitTime = 0;
         const fadeInProject = TweenMax.fromTo(project, 0.6,
           { autoAlpha: 0, y: 30 },
-          { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);
+          { autoAlpha: 1, y: 0, ease: Power3.easeInOut },
+          waitTime);
 
         const projectScene = new ScrollMagic.Scene({
           triggerElement: project,

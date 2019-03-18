@@ -4,8 +4,10 @@
 // Base
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/fonts';
 @import 'base/base';
+@import 'base/effects';
+@import 'base/fonts';
+@import 'base/scroll';
 
 // Modules
 @import 'modules/announcement';

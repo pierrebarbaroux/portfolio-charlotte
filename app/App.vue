@@ -10,9 +10,8 @@
 <script>
 import Preloader from 'components/Preloader';
 import {
-  TweenMax, Power1, Power3, ScrollToPlugin,
+  TweenMax, Power1, ScrollToPlugin,
 } from 'gsap/all';
-import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import Smooth from 'smooth-scrolling';
 
@@ -25,29 +24,29 @@ export default {
   data() {
     return {
       loading: false,
+      smooth: undefined,
     };
   },
   mounted() {
     this.scrollInit();
-
-    // setTimeout(() => {
-    //   this.loading = false;
-    // }, 800);
+  },
+  updated() {
+    if (this.smooth) {
+      this.smooth.destroy();
+      this.scrollInit();
+    }
   },
   methods: {
     scrollInit() {
       const section = document.querySelector('.page');
-      const smooth = new Smooth({
+      this.smooth = new Smooth({
+        preload: true,
         native: false,
+        preventTouch: true,
         section,
-        preload: false,
-        preventTouch: false,
-        ease: 0.1,
-        vs: {
-          touchMultiplier: 4,
-        },
+        ease: 0.05,
       });
-      smooth.init();
+      this.smooth.init();
     },
     scrollToElem: (e) => {
       const targetScroll = e.target.dataset.scroll;

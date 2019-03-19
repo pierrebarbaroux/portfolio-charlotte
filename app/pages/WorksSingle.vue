@@ -30,7 +30,7 @@
                   {{ filteredData.description }}
                 </p>
                 <div class="work__more">
-                  {{ filteredData.target }} - Role : {{ filteredData.role }}
+                  {{ filteredData.target }}
                 </div>
               </div>
             </div>
@@ -65,11 +65,29 @@
                   <!-- <img src="../assets/images/blob-1.svg"> -->
                 </div>
                 <div
+                  v-if="section.class === 'work-slider-fullwidth'"
+                  class="slider-container"
+                >
+                  <div
+                    v-for="(asset, indexAsset) in section.assets"
+                    :key="indexAsset"
+                  >
+                    <img
+                      v-if="asset.type === 'image'"
+                      :class="section.class"
+                      :src="asset.src"
+                      :alt="asset.alt"
+                    >
+                  </div>
+                </div>
+                <div
                   v-for="(asset, indexAsset) in section.assets"
+                  v-else
                   :key="indexAsset"
                 >
                   <img
                     v-if="asset.type === 'image'"
+                    :class="section.class"
                     :src="asset.src"
                     :alt="asset.alt"
                   >
@@ -83,31 +101,37 @@
                       Your browser does not support HTML5 video.
                     </p>
                   </video>
+                  </divwork-slider-fullwidth>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="work__next">
-          <div class="work">
-            <a
-              :href="`/works/${nextProject.slug}`"
-              :aria-label="`${nextProject.title}`"
-            >
-              <div class="work__image">
-                <img :src="nextProject.landing">
-              </div>
-            </a>
-
-            <div class="work__content">
-              <div class="work__content-container">
-                <div class="work__type">
-                  Next project
+          <div class="work__next">
+            <div class="work">
+              <a
+                :href="`/works/${nextProject.slug}`"
+                :aria-label="`${nextProject.title}`"
+              >
+                <div class="work__image">
+                  <img :src="nextProject.landing">
                 </div>
-                <h2 class="work__name">
-                  {{ nextProject.title }}
-                </h2>
+              </a>
+
+              <div class="work__content">
+                <div class="work__content-container">
+                  <div class="work__type">
+                    Next project
+                  </div>
+                  <h2 class="work__name">
+                    {{ nextProject.title }}
+                  </h2>
+                  <div class="work__more">
+                    <router-link :to="`/works/${nextProject.slug}`" class="work__more">
+                      view more
+                    </router-link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -122,6 +146,7 @@
 <script>
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
+import Smooth from 'smooth-scrolling';
 
 export default {
   components: {
@@ -137,6 +162,7 @@ export default {
   data() {
     return {
       nextProject: [],
+      smoothScroll: undefined,
     };
   },
   computed: {
@@ -166,8 +192,40 @@ export default {
 
     // Get next project
     this.nextProject = this.getNextProject();
+
+    this.scrollHorizontalSlider();
+  },
+  updated() {
+    if (this.smoothScroll) {
+      this.smoothScroll.destroy();
+      this.scrollHorizontalSlider();
+    }
+  },
+  beforeRouteLeave(to, from, next) {
+    if (this.smoothScroll) this.smoothScroll.destroy();
+    next();
   },
   methods: {
+    scrollHorizontalSlider() {
+      const section = document.querySelector('.work__section.work-slider-fullwidth .work__assets .slider-container');
+      const divs = document.querySelectorAll('.work__section.work-slider-fullwidth .work__assets .slider-container div');
+      if (section && divs) {
+        this.smoothScroll = new Smooth({
+          native: false,
+          direction: 'horizontal',
+          preventTouch: true,
+          section,
+          divs,
+          ease: 0.05,
+          vs: {
+            touchMultiplier: 4,
+            preventTouch: true,
+          },
+          preload: true,
+        });
+        this.smoothScroll.init();
+      }
+    },
     getNextProject() {
       if (this.works) {
         const url = `${window.location.protocol}//${window.location.host}/works/`;

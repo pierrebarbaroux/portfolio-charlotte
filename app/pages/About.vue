@@ -3,21 +3,18 @@
     <Nav />
     <div class="page page-about">
       <header class="header">
-        <div class="container header__container">
-          <div class="header__content header__content--about">
-            <div class="myself">
-              <small>Hello it's me</small>
-              <h2>
-                I'm Charlotte, a french digital student designer.
-              </h2>
-              <p>
-                I am 24 years old and I am living in Paris.
-                I am currently involved in the fourth year in HETIC, a web industry school.
-                I am pretty passionate about digital and graphic design.
-                I am currently seeking for a six-month internship as a Digital Designer, from June to November 2019.
-              </p>
-            </div>
-            <!-- <div class="photo"></div> -->
+        <div class="header__content header__content--about">
+          <div class="myself">
+            <small>Bonjour !</small>
+            <h2>
+              I'm Charlotte, a french digital student designer.
+            </h2>
+            <p>
+              I am 24 years old, I am living in Paris (but I was born and raised in Marseille, a city in south-east of France, that’s why I love the sea and the sun!). I am currently involved in the fourth year in HETIC, a web industry school where I am studying technologies and web design. I am pretty passionate about digital and graphic design. I am currently seeking for a six-month internship as a Digital Designer, from June to November 2019.
+            </p>
+          </div>
+          <div class="photo">
+            <img src="https://res.cloudinary.com/pbx/image/upload/v1553014457/portfolio-charlotte/about/charlotte-sieess.jpg" alt="Charlotte Sieess photo" />
           </div>
         </div>
       </header>
@@ -73,3 +70,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.page-about {
+  .header {
+    padding-top: 200px;
+  }
+
+  .photo {
+    margin-right: 80px;
+    
+    img {
+      height: 500px;
+    }
+  }
+}
+</style>

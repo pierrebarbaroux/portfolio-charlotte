@@ -24,22 +24,22 @@ export default {
   data() {
     return {
       loading: false,
-      smooth: undefined,
+      smoothScroll: undefined,
     };
   },
   mounted() {
     this.scrollInit();
   },
   updated() {
-    if (this.smooth) {
-      this.smooth.destroy();
+    if (this.smoothScroll) {
+      this.smoothScroll.destroy();
       this.scrollInit();
     }
   },
   methods: {
     scrollInit() {
       const section = document.querySelector('.page');
-      this.smooth = new Smooth({
+      this.smoothScroll = new Smooth({
         native: false,
         preventTouch: true,
         section,
@@ -50,7 +50,7 @@ export default {
         },
         preload: true,
       });
-      this.smooth.init();
+      this.smoothScroll.init();
     },
     scrollToElem: (e) => {
       const targetScroll = e.target.dataset.scroll;

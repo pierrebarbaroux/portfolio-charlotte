@@ -7,10 +7,10 @@
           <div class="header__content">
             <h1>
               <div class="header__title header__title-first">
-                Hey,
+                Young digital designer
               </div>
               <div class="header__title header__title-second">
-                welcome home
+                and chocolate lover
               </div>
             </h1>
           </div>
@@ -32,7 +32,7 @@ import Nav from 'components/Nav';
 import WorksAll from 'components/WorksAll';
 import Footer from 'components/Footer';
 import { TimelineMax, Power3 } from 'gsap';
-import works from '../../static/works.json';
+import works from '../../static/projects.json';
 
 export default {
   title: 'Home',
@@ -81,7 +81,7 @@ export default {
       const letters = document.querySelectorAll('.intro__letter');
       const waitTime = 0;
       letters.forEach((letter, i) => {
-        timeline.fromTo(letter, 1.5,
+        timeline.fromTo(letter, 1.3,
           { autoAlpha: 0, y: 250 },
           { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, i * 0.03 + waitTime);
       });
@@ -93,8 +93,8 @@ export default {
         },
       });
       const scrollText = document.querySelector('.js-scroll-text');
-      const waitTime = 1.3;
-      timeline.fromTo(scrollText, 0.8,
+      const waitTime = 0.8;
+      timeline.fromTo(scrollText, 1.3,
         { autoAlpha: 0, y: -30 },
         { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);
     },

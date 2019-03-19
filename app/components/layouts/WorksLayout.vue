@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import works from '../../../static/works.json';
+import works from '../../../static/projects.json';
 
 export default {
   data() {

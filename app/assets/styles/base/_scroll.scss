@@ -28,12 +28,43 @@ body, .is-virtual-scroll {
       -webkit-transform: none;
       transform: none;
     }
+
+    .vs-scrolldrag {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &.vs-horizontal {
+    width: 100%;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+
+    &:hover {
+      -webkit-transform: none;
+      transform: none;
+    }
+
+    .vs-scrolldrag {
+      width: auto;
+      height: 100%;
+    }
   }
 
   .vs-scrolldrag {
-    width: 100%;
-    height: auto;
-    background: $black;
+    background: $red;
     cursor: pointer;
+  }
+}
+
+.is-dragging {
+  .vs-scrollbar.vs-horizontal,
+  .vs-scrollbar.vs-vertical {
+    -webkit-transform: none;
+    transform: none;
   }
 }

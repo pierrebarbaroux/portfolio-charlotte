@@ -66,18 +66,20 @@
                 </div>
                 <div
                   v-if="section.class === 'work-slider-fullwidth'"
-                  class="slider-container"
+                  class="swiper-container"
                 >
-                  <div
-                    v-for="(asset, indexAsset) in section.assets"
-                    :key="indexAsset"
-                  >
-                    <img
-                      v-if="asset.type === 'image'"
-                      :class="section.class"
-                      :src="asset.src"
-                      :alt="asset.alt"
+                  <div class="swiper-wrapper">
+                    <div
+                      v-for="(asset, indexAsset) in section.assets"
+                      :key="indexAsset"
                     >
+                      <img
+                        v-if="asset.type === 'image'"
+                        :class="`${section.class} swiper-slide`"
+                        :src="asset.src"
+                        :alt="asset.alt"
+                      >
+                    </div>
                   </div>
                 </div>
                 <div
@@ -101,7 +103,6 @@
                       Your browser does not support HTML5 video.
                     </p>
                   </video>
-                  </divwork-slider-fullwidth>
                 </div>
               </div>
             </div>
@@ -127,7 +128,10 @@
                     {{ nextProject.title }}
                   </h2>
                   <div class="work__more">
-                    <router-link :to="`/works/${nextProject.slug}`" class="work__more">
+                    <router-link
+                      :to="`/works/${nextProject.slug}`"
+                      class="work__more"
+                    >
                       view more
                     </router-link>
                   </div>
@@ -146,7 +150,7 @@
 <script>
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
-import Smooth from 'smooth-scrolling';
+import Swiper from 'swiper';
 
 export default {
   components: {
@@ -163,6 +167,14 @@ export default {
     return {
       nextProject: [],
       smoothScroll: undefined,
+      swiperOptions: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        freeMode: true,
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 250,
+        grabCursor: true,
+      },
     };
   },
   computed: {
@@ -188,44 +200,17 @@ export default {
           meta[i].content = `${this.filteredData.title}`;
         }
       }
+
+      const section = '.work__section.work-slider-fullwidth .work__assets .swiper-container';
+      if (document.querySelector(section)) {
+        const swiper = new Swiper(section, this.swiperOptions);
+      }
     }
 
     // Get next project
     this.nextProject = this.getNextProject();
-
-    this.scrollHorizontalSlider();
-  },
-  updated() {
-    if (this.smoothScroll) {
-      this.smoothScroll.destroy();
-      this.scrollHorizontalSlider();
-    }
-  },
-  beforeRouteLeave(to, from, next) {
-    if (this.smoothScroll) this.smoothScroll.destroy();
-    next();
   },
   methods: {
-    scrollHorizontalSlider() {
-      const section = document.querySelector('.work__section.work-slider-fullwidth .work__assets .slider-container');
-      const divs = document.querySelectorAll('.work__section.work-slider-fullwidth .work__assets .slider-container div');
-      if (section && divs) {
-        this.smoothScroll = new Smooth({
-          native: false,
-          direction: 'horizontal',
-          preventTouch: true,
-          section,
-          divs,
-          ease: 0.05,
-          vs: {
-            touchMultiplier: 4,
-            preventTouch: true,
-          },
-          preload: true,
-        });
-        this.smoothScroll.init();
-      }
-    },
     getNextProject() {
       if (this.works) {
         const url = `${window.location.protocol}//${window.location.host}/works/`;

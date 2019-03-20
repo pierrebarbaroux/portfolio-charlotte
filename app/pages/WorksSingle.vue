@@ -72,15 +72,17 @@
                     <div
                       v-for="(asset, indexAsset) in section.assets"
                       :key="indexAsset"
+                      class="swiper-slide"
                     >
                       <img
                         v-if="asset.type === 'image'"
-                        :class="`${section.class} swiper-slide`"
+                        :class="section.class"
                         :src="asset.src"
                         :alt="asset.alt"
                       >
                     </div>
                   </div>
+                  <div class="swiper-scrollbar" />
                 </div>
                 <div
                   v-for="(asset, indexAsset) in section.assets"
@@ -170,10 +172,12 @@ export default {
       swiperOptions: {
         slidesPerView: 'auto',
         spaceBetween: 30,
-        freeMode: true,
-        slidesOffsetBefore: 0,
-        slidesOffsetAfter: 250,
+        // freeMode: true,
         grabCursor: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
       },
     };
   },

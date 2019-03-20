@@ -50,7 +50,17 @@ export default {
         },
         preload: true,
       });
-      this.smoothScroll.init();
+      setTimeout(() => {
+        this.smoothScroll.init();
+      });
+
+      // Tricky fix for multiple scrollbars in production mode
+      setTimeout(() => {
+        const scrollbars = document.querySelectorAll('.vs-scrollbar.vs-vertical');
+        scrollbars.forEach((scrollbar, index) => {
+          if (index + 1 !== scrollbars.length) scrollbar.parentNode.removeChild(scrollbar);
+        });
+      }, 100);
     },
     scrollToElem: (e) => {
       const targetScroll = e.target.dataset.scroll;

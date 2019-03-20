@@ -13,6 +13,7 @@
     "@babel/runtime": "^7.3.1",
     "gsap": "^2.0.2",
     "lethargy": "^1.0.4",
+    "preload-js": "^0.6.3",
     "scrollmagic": "^2.0.6",
     "smooth-scrolling": "^2.3.11",
     "swiper": "^4.5.0",

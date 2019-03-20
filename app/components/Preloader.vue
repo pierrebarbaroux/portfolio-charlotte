@@ -1,5 +1,16 @@
 <template>
   <div class="preloader">
-    00
+    {{ percentage }}
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    percentage: {
+      type: Number,
+      required: true,
+    },
+  },
+};
+</script>

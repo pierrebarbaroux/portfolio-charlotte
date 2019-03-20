@@ -40,7 +40,7 @@ export default {
       });
 
       const nav = document.querySelector('.nav');
-      const waitTime = 1.0;
+      const waitTime = 0.3;
       timeline.fromTo(nav, 1.5,
         { autoAlpha: 0, y: -30 },
         { autoAlpha: 1, y: 0, ease: Power3.easeInOut }, waitTime);

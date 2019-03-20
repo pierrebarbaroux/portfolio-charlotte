@@ -82,7 +82,6 @@
                       >
                     </div>
                   </div>
-                  <div class="swiper-scrollbar" />
                 </div>
                 <div
                   v-for="(asset, indexAsset) in section.assets"
@@ -172,12 +171,8 @@ export default {
       swiperOptions: {
         slidesPerView: 'auto',
         spaceBetween: 30,
-        // freeMode: true,
+        freeMode: true,
         grabCursor: true,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
-        },
       },
     };
   },

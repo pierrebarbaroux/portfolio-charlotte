@@ -9,6 +9,19 @@
   justify-content: space-between;
   font-weight: 400;
 
+  &.has-background {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fec3a6;
+    padding: rem(30px) rem(40px);
+
+    @include small {
+      padding: rem(15px) rem(20px);
+    }
+  }
+
   &-dark {
     background: red;
 

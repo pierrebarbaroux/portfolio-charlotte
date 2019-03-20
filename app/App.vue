@@ -1,21 +1,18 @@
 <template>
   <div id="app">
     <Preloader
-      v-if="loading"
+      v-if="!isLoaded"
+      :percentage="percentage"
     />
-    <router-view />
+    <router-view v-if="isLoaded" />
   </div>
 </template>
 
 <script>
 import Preloader from 'components/Preloader';
-import {
-  TweenMax, Power1, ScrollToPlugin,
-} from 'gsap/all';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import Smooth from 'smooth-scrolling';
-
-const plugins = [ScrollToPlugin];
+import createjs from 'preload-js';
+import works from '../static/projects.json';
 
 export default {
   components: {
@@ -23,12 +20,19 @@ export default {
   },
   data() {
     return {
-      loading: false,
+      assets: [],
+      date: undefined,
+      isLoaded: false,
+      percentage: 0,
       smoothScroll: undefined,
     };
   },
+  created() {
+    this.date = new Date();
+  },
   mounted() {
-    this.scrollInit();
+    this.getAssets();
+    this.loadAssets();
   },
   updated() {
     if (this.smoothScroll) {
@@ -37,6 +41,58 @@ export default {
     }
   },
   methods: {
+    getAssets() {
+      works.forEach((work) => {
+        // Push landing images
+        this.assets.push(work.landing);
+        if (work.sections.length) {
+          work.sections.forEach((section) => {
+            if (section.assets.length) {
+              section.assets.forEach((asset) => {
+                // Push assets images/videos
+                this.assets.push(asset.src);
+              });
+            }
+          });
+        }
+      });
+    },
+
+    loadAssets() {
+      if (this.assets.length) {
+        const queue = new createjs.LoadQueue();
+        queue.on('progress', this.onProgress);
+        queue.on('complete', this.onComplete);
+        queue.loadManifest(this.assets);
+      }
+    },
+
+    onComplete(e) {
+      if (this.percentage === 100) {
+        if (!this.isLoaded) this.isLoaded = true;
+        setTimeout(() => {
+          this.scrollInit();
+        }, 100);
+      }
+    },
+
+    onProgress(e) {
+      const elapsed = (new Date() - this.date);
+      const percentage = !isNaN(e.loaded) ? Math.round(e.loaded * 100) : 100;
+
+      this.percentage = percentage;
+
+      if (elapsed > 1000) {
+        this.date = new Date();
+      }
+
+      if (percentage === 100) window.requestAnimationFrame(this.onProgress);
+      else {
+        window.cancelAnimationFrame(this.onProgress);
+        this.onComplete(e);
+      }
+    },
+
     scrollInit() {
       const section = document.querySelector('.page');
       this.smoothScroll = new Smooth({
@@ -57,15 +113,14 @@ export default {
       // Tricky fix for multiple scrollbars in production mode
       setTimeout(() => {
         const scrollbars = document.querySelectorAll('.vs-scrollbar.vs-vertical');
-        scrollbars.forEach((scrollbar, index) => {
-          if (index + 1 !== scrollbars.length) scrollbar.parentNode.removeChild(scrollbar);
-        });
+        if (scrollbars.length) {
+          scrollbars.forEach((scrollbar, index) => {
+            if (index + 1 !== scrollbars.length) scrollbar.parentNode.removeChild(scrollbar);
+          });
+        }
       }, 100);
     },
-    scrollToElem: (e) => {
-      const targetScroll = e.target.dataset.scroll;
-      TweenMax.to(window, 1, { scrollTo: document.querySelector(`.${targetScroll}`), ease: Power1.easeOut });
-    },
+
   },
 };
 </script>

@@ -52,9 +52,20 @@ export default {
       type: Array,
       required: true,
     },
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  watch: {
+    isLoaded() {
+      this.animInProjects();
+    },
   },
   mounted() {
-    this.animInProjects();
+    if (this.isLoaded) {
+      this.animInProjects();
+    }
   },
   methods: {
     animInProjects: () => {

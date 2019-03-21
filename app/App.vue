@@ -4,7 +4,9 @@
       v-if="!isLoaded"
       :percentage="percentage"
     />
-    <router-view v-if="isLoaded" />
+    <router-view
+      :is-loaded="isLoaded"
+    />
   </div>
 </template>
 
@@ -45,16 +47,16 @@ export default {
       works.forEach((work) => {
         // Push landing images
         this.assets.push(work.landing);
-        if (work.sections.length) {
-          work.sections.forEach((section) => {
-            if (section.assets.length) {
-              section.assets.forEach((asset) => {
-                // Push assets images/videos
-                this.assets.push(asset.src);
-              });
-            }
-          });
-        }
+        // if (work.sections.length) {
+        //   work.sections.forEach((section) => {
+        //     if (section.assets.length) {
+        //       section.assets.forEach((asset) => {
+        //         // Push assets images/videos
+        //         this.assets.push(asset.src);
+        //       });
+        //     }
+        //   });
+        // }
       });
     },
 
@@ -80,13 +82,13 @@ export default {
       const elapsed = (new Date() - this.date);
       const percentage = !isNaN(e.loaded) ? Math.round(e.loaded * 100) : 100;
 
-      this.percentage = percentage + 1;
+      this.percentage = percentage;
 
       if (elapsed > 1000) {
         this.date = new Date();
       }
 
-      if (percentage >= 99) window.requestAnimationFrame(this.onProgress);
+      if (percentage === 100) window.requestAnimationFrame(this.onProgress);
       else {
         window.cancelAnimationFrame(this.onProgress);
         this.onComplete(e);

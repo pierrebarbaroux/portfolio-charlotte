@@ -26,13 +26,26 @@
 <script>
 import { TimelineMax, Power3 } from 'gsap';
 
-
 export default {
+  props: {
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  watch: {
+    isLoaded() {
+      this.animInNav();
+    },
+  },
   mounted() {
-    this.animInNav();
+    if (this.isLoaded) {
+      this.animInNav();
+    }
   },
   methods: {
     animInNav: () => {
+      console.log('anim');
       const timeline = new TimelineMax({
         onComplete: () => {
           timeline.kill();

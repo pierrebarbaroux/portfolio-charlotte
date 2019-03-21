@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <Nav :is-loaded="isLoaded" />
     <div class="page page-home">
       <header class="header header--full">
         <div class="container header__container">
@@ -20,7 +20,10 @@
         </div>
       </header>
 
-      <WorksAll :works="works" />
+      <WorksAll
+        :works="works"
+        :is-loaded="isLoaded"
+      />
 
       <Footer />
     </div>
@@ -42,15 +45,30 @@ export default {
     WorksAll,
     Footer,
   },
+  props: {
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
+  },
   data() {
     return {
       works,
     };
   },
+  watch: {
+    isLoaded() {
+      this.parseTitle();
+      this.animInTitle();
+      this.animInScrollText();
+    },
+  },
   mounted() {
-    this.parseTitle();
-    this.animInTitle();
-    this.animInScrollText();
+    if (this.isLoaded) {
+      this.parseTitle();
+      this.animInTitle();
+      this.animInScrollText();
+    }
   },
   methods: {
     parseTitle: () => {

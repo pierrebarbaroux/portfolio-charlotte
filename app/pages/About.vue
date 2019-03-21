@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <Nav :is-loaded="isLoaded" />
     <div class="page page-about">
       <header class="header">
         <div class="header__content header__content--about">
@@ -14,7 +14,10 @@
             </p>
           </div>
           <div class="photo">
-            <img src="https://res.cloudinary.com/pbx/image/upload/v1553014457/portfolio-charlotte/about/charlotte-sieess.jpg" alt="Charlotte Sieess photo" />
+            <img
+              src="https://res.cloudinary.com/pbx/image/upload/v1553014457/portfolio-charlotte/about/charlotte-sieess.jpg"
+              alt="Charlotte Sieess photo"
+            >
           </div>
         </div>
       </header>
@@ -68,6 +71,12 @@ export default {
     Nav,
     Footer,
   },
+  props: {
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -79,7 +88,7 @@ export default {
 
   .photo {
     margin-right: 80px;
-    
+
     img {
       height: 500px;
     }

@@ -156,7 +156,6 @@
       padding-top: 50px;
     }
 
-
     .swiper-container {
       width: 100%;
       height: 600px;
@@ -194,7 +193,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
 
       @include small {
-        width: 60%;
+        width: 80%;
       }
     }
     img.work-asset-fullwidth { box-shadow: none; }
@@ -278,6 +277,22 @@
         font-family: $font-text;
         font-weight: 500;
         font-size: rem(23px);
+      }
+
+      // + Type: work-fullwidth-desktop
+      &.work-fullwidth-desktop {
+        .work__assets {
+          flex-direction: column;
+
+          img {
+            max-width: 80%;
+          }
+
+          > div:not(:last-child) {
+            margin-bottom: 40px;
+            margin-right: 0;
+          }
+        }
       }
     }
 

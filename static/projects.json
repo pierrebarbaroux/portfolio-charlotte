@@ -146,7 +146,7 @@
         ]
       },
       {
-        "class": "work-fullwidth background-blue",
+        "class": "work-fullwidth background-blue work-fullwidth-desktop",
         "title": "Selections",
         "assets": [
           {

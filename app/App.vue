@@ -68,7 +68,7 @@ export default {
     },
 
     onComplete(e) {
-      if (this.percentage === 100) {
+      if (this.percentage >= 99) {
         if (!this.isLoaded) this.isLoaded = true;
         setTimeout(() => {
           this.scrollInit();
@@ -80,13 +80,13 @@ export default {
       const elapsed = (new Date() - this.date);
       const percentage = !isNaN(e.loaded) ? Math.round(e.loaded * 100) : 100;
 
-      this.percentage = percentage;
+      this.percentage = percentage + 1;
 
       if (elapsed > 1000) {
         this.date = new Date();
       }
 
-      if (percentage === 100) window.requestAnimationFrame(this.onProgress);
+      if (percentage >= 99) window.requestAnimationFrame(this.onProgress);
       else {
         window.cancelAnimationFrame(this.onProgress);
         this.onComplete(e);
@@ -105,6 +105,10 @@ export default {
           preventTouch: true,
         },
         preload: true,
+        callback: (scrollY) => {
+          const nav = document.querySelector('.nav');
+          scrollY > 200 ? nav.classList.contains('collapsed') || nav.classList.add('collapsed') : nav.classList.remove('collapsed');
+        },
       });
       setTimeout(() => {
         this.smoothScroll.init();

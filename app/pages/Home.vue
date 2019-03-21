@@ -64,11 +64,12 @@ export default {
           letters.push(initialContent.charAt(i));
         }
 
-        const wrappedLetters = letters
+        let wrappedLetters = letters
           .filter(letter => (letter && letter !== '\n'))
-          .map(letter => (letter.trim() !== '' ? (`<span class="intro__letter">${letter}</span>`) : ' '))
+          .map(letter => (letter.trim() !== '' ? (`<span class="intro__letter">${letter}</span>`) : '</div> <div class="intro__words">'))
           .join('');
 
+        wrappedLetters = `<div class="intro__words">${wrappedLetters}</div>`;
         title.innerHTML = wrappedLetters;
       });
     },
@@ -103,7 +104,7 @@ export default {
 </script>
 
 <style>
-.intro__letter {
+.intro__words, .intro__letter {
   display: inline-block;
 }
 </style>

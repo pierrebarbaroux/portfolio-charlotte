@@ -9,16 +9,29 @@
   justify-content: space-between;
   font-weight: 400;
 
-  &.has-background {
+  &.collapsed {
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    background: #fec3a6;
-    padding: rem(30px) rem(40px);
+    background: $white;
+    padding: rem(18px) rem(30px);
 
-    @include small {
-      padding: rem(15px) rem(20px);
+    a {
+      color: $black;
+    }
+
+    &::before {
+      -webkit-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+      -moz-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+      transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+      width: 100%;
+      content: "";
+      display: none;
+      background-color: #fff;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      height: 100%;
     }
   }
 
@@ -39,6 +52,7 @@
   @include small {
     left: rem(30px);
     right: rem(30px);
+    top: rem(18px);
   }
 
   a {

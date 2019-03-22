@@ -5,7 +5,9 @@
       <header class="header">
         <div class="header__content header__content--about">
           <div class="myself">
-            <small>Bonjour !</small>
+            <div>
+              <small>Bonjour !</small>
+            </div>
             <h2>
               I'm Charlotte, a french digital student designer.
             </h2>
@@ -61,6 +63,8 @@
 </template>
 
 <script>
+import { TimelineMax, Power3 } from 'gsap';
+
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 
@@ -77,6 +81,41 @@ export default {
       required: true,
     },
   },
+  watch: {
+    isLoaded() {
+      this.animInIntro();
+    },
+  },
+  mounted() {
+    if (this.isLoaded) {
+      this.animInIntro();
+    }
+  },
+  methods: {
+    animInIntro: () => {
+      const sectionsIntro = document.querySelectorAll('.myself > *');
+      const photo = document.querySelector('.photo');
+      const waitTime = 0.05;
+
+      const timeline = new TimelineMax({
+        onComplete: () => {
+          timeline.kill();
+        },
+      });
+
+      sectionsIntro.forEach((section, i) => {
+        timeline.fromTo(section, 1.2,
+          { autoAlpha: 0, y: 50 },
+          { autoAlpha: 1, y: 0, ease: Power3.easeInOut },
+          i * 0.2 + waitTime);
+      });
+
+      timeline.fromTo(photo, 1,
+        { autoAlpha: 0, x: -100 },
+        { autoAlpha: 1, x: 0, ease: Power3.easeInOut },
+        0.4);
+    },
+  },
 };
 </script>
 
@@ -86,6 +125,7 @@ export default {
 
 .header {
   padding-top: 150px;
+  min-height: 95vh;
 
   @include small {
     padding-top: 100px;

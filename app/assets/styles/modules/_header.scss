@@ -26,10 +26,6 @@
     align-items: center;
     justify-content: center;
 
-    &--about {
-      flex-direction: row-reverse;
-    }
-
     h1 {
       font-size: rem(80px);
       line-height: rem(120px);

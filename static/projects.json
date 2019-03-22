@@ -202,11 +202,11 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/home_scroll_AR.mp4"
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553249203/portfolio-charlotte/works/pompidou/videos/1_actualites.mp4"
           },
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591803/portfolio-charlotte/works/pompidou/videos/expo_scroll_AR.mp4"
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553249217/portfolio-charlotte/works/pompidou/videos/2_vasarely.mp4"
           }
         ]
       },
@@ -228,11 +228,11 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591802/portfolio-charlotte/works/pompidou/videos/billetterie_scroll_AR.mp4"
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553249218/portfolio-charlotte/works/pompidou/videos/3_visite.mp4"
           },
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591804/portfolio-charlotte/works/pompidou/videos/visite_scroll_AR.mp4"
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553249220/portfolio-charlotte/works/pompidou/videos/4_tunnel_achat.mp4"
           }
         ]
       },
@@ -243,7 +243,7 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552591805/portfolio-charlotte/works/pompidou/videos/tunnel_achat.mp4"
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553249217/portfolio-charlotte/works/pompidou/videos/5_cest_aujourdhui.mp4"
           },
           {
             "type": "image",

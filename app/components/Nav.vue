@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     animInNav: () => {
-      console.log('anim');
       const timeline = new TimelineMax({
         onComplete: () => {
           timeline.kill();

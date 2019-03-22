@@ -81,16 +81,154 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-about {
-  .header {
-    padding-top: 200px;
+@import '../assets/styles/base/variables';
+@import '../assets/styles/base/mixins';
+
+.header {
+  padding-top: 150px;
+
+  @include small {
+    padding-top: 100px;
   }
 
-  .photo {
-    margin-right: 80px;
+  &__content {
+    &--about {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      width: 90%;
+      margin: auto;
+
+      @include small {
+        flex-direction: column;
+      }
+
+      .photo {
+        margin-right: 130px;
+
+        @include medium {
+          margin-right: 80px;
+        }
+
+        @include small {
+          margin: 50px auto -50px auto;
+        }
+
+        img {
+          height: 500px;
+        }
+      }
+
+      .myself {
+        width: 50%;
+        margin: rem(30px) 0;
+
+        @include small {
+          width: 100%;
+        }
+
+        small {
+          text-transform: uppercase;
+          font-family: $font-text;
+          font-weight: 400;
+          font-size: rem(14px);
+          color: $red;
+        }
+
+        h2 {
+          font-size: rem(48px);
+          line-height: rem(72px);
+          margin: 30px 0 40px;
+          font-family: $font-title;
+          font-weight: 700;
+
+          @include medium {
+            font-size: rem(38px);
+            line-height: rem(56px);
+          }
+
+          @include small {
+            font-size: rem(35px);
+            line-height: rem(52px);
+          }
+        }
+
+        p {
+          font-size: rem(18px);
+          line-height: rem(28px);
+          color: $white;
+          font-family: $font-text;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.work__intro {
+  &-header {
+    @include small {
+      text-align: left;
+    }
+  }
+
+  &-container {
+    @include small {
+      margin-top: 60px;
+    }
+  }
+
+  &-content {
+    @include small {
+      padding-top: 20px;
+    }
+  }
+}
+
+.work__fields {
+  margin-top: 60px;
+
+  &-title {
+    font-size: rem(14px);
+    line-height: rem(23px);
+    text-transform: uppercase;
+    color: $red;
+    margin-bottom: 30px;
+  }
+
+  &-item {
+    font-size: rem(23px);
+    line-height: rem(34px);
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+    @include small {
+      font-size: rem(16px);
+      line-height: rem(24px);
+      width: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-right: -40px;
+
+      @include small {
+        margin-right: -20px;
+      }
+    }
 
     img {
-      height: 500px;
+      width: 100%;
+      user-select: none;
+    }
+
+    &-text {
+      font-weight: 500;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

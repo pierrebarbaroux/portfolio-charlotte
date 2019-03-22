@@ -1,5 +1,5 @@
 .work {
-  padding: rem(100px) 0 rem(100px);
+  padding: rem(70px) 0 rem(70px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,10 +79,10 @@
   }
 
   &__image {
-    height: 500px;
+    height: 450px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     img {
       width: 100%;
@@ -145,7 +145,7 @@
   }
 
   &__assets {
-    padding-top: 70px;
+    padding-top: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -222,7 +222,7 @@
   }
 
   &__section {
-    padding: rem(100px) 0 rem(50px);
+    padding: rem(80px) 0 rem(40px);
 
     &-container {
       z-index: 1;
@@ -298,7 +298,7 @@
 
     // Type: work-explanation
     &.work-explanation {
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
 
       > .container {
         display: flex;
@@ -390,47 +390,6 @@
       }
       .work__content-type {
         text-align: right;
-      }
-    }
-  }
-
-  &__fields {
-    margin-top: 60px;
-
-    &-title {
-      font-size: rem(14px);
-      line-height: rem(23px);
-      text-transform: uppercase;
-      color: $red;
-      margin-bottom: 30px;
-    }
-
-    &-item {
-      font-size: rem(23px);
-      line-height: rem(34px);
-      color: $white;
-      text-transform: uppercase;
-      display: inline-block;
-      position: relative;
-      width: 250px;
-      height: 250px;
-      text-align: center;
-
-      &:not(:last-child) {
-        margin-right: -40px;
-      }
-
-      img {
-        width: 100%;
-        user-select: none;
-      }
-
-      &-text {
-        font-weight: 500;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
       }
     }
   }

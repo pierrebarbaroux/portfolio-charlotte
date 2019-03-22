@@ -116,7 +116,10 @@
                 :aria-label="`${nextProject.title}`"
               >
                 <div class="work__image">
-                  <img :src="nextProject.landing">
+                  <img
+                    :src="nextProject.landing"
+                    :alt="`${nextProject.title} landing image`"
+                  >
                 </div>
               </a>
 

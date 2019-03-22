@@ -4,9 +4,7 @@
       v-if="!isLoaded"
       :percentage="percentage"
     />
-    <router-view
-      :is-loaded="isLoaded"
-    />
+    <router-view :is-loaded="isLoaded" />
   </div>
 </template>
 

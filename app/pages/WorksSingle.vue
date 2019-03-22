@@ -152,9 +152,14 @@
 </template>
 
 <script>
+import {
+  TweenMax, Power1, TimelineMax,
+} from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import Swiper from 'swiper';
+
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
-import Swiper from 'swiper';
 
 export default {
   components: {
@@ -211,6 +216,9 @@ export default {
 
     // Get next project
     this.nextProject = this.getNextProject();
+
+    // Anim sections
+    this.animInSections();
   },
   methods: {
     getNextProject() {
@@ -225,6 +233,35 @@ export default {
         if (this.works.length === i + 1) i = 0; else i += 1;
         return this.works[i];
       } return false;
+    },
+    animInSections() {
+      const controller = new ScrollMagic.Controller();
+      const sectionsExplanation = document.querySelectorAll('.work__section.work-explanation');
+
+      const timeline = new TimelineMax({
+        onComplete: () => {
+          timeline.kill();
+        },
+      });
+
+      sectionsExplanation.forEach((section) => {
+        const waitTime = 0;
+        const fadeInSection = TweenMax.fromTo(section, 1,
+          { autoAlpha: 0, y: 130 },
+          { autoAlpha: 1, y: 0, ease: Power1.easeInOut },
+          waitTime);
+
+        const sectionScene = new ScrollMagic.Scene({
+          triggerElement: section,
+          triggerHook: 1,
+          reverse: false,
+        })
+          .setTween(fadeInSection)
+          .on('end', () => {
+            sectionScene.destroy();
+          })
+          .addTo(controller);
+      });
     },
   },
 };

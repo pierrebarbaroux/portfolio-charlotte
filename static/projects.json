@@ -9,7 +9,7 @@
     "target": "School project",
     "type": "UX UI Design • Web application",
     "role": "UX/UI Designer",
-    "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/oystr/oystr-landing.jpg",
+    "landing": "https://res.cloudinary.com/pbx/image/upload/v1553271830/portfolio-charlotte/works/oystr/oystr-landing.jpg",
     "sections": [
       {
         "class": "work-fullwidth background-blue",
@@ -84,7 +84,7 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/oystr/oystr-nantes.jpg",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553271831/portfolio-charlotte/works/oystr/oystr-nantes.jpg",
             "alt": "Yellow building in Nantes",
             "title": "Architecture photography of Nantes"
           }
@@ -175,7 +175,7 @@
     "target": "Personal project",
     "type": "UX UI Design • Mobile application",
     "role": "UX/UI Designer",
-    "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556360/portfolio-charlotte/works/pompidou/pompidou-landing.jpg",
+    "landing": "https://res.cloudinary.com/pbx/image/upload/v1553271408/portfolio-charlotte/works/pompidou/pompidou-landing.jpg",
     "sections": [
       {
         "class": "work-fullwidth background-red",
@@ -215,7 +215,7 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/pompidou/pompidou-inside.jpg",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553271408/portfolio-charlotte/works/pompidou/pompidou-inside.jpg",
             "alt": "",
             "title": ""
           }
@@ -276,7 +276,7 @@
     "target": "School project",
     "type": "UX UI Design • Mobile application",
     "role": "UX/UI Designer",
-    "landing": "https://res.cloudinary.com/pbx/image/upload/v1551556357/portfolio-charlotte/works/bokee/bokee-landing.jpg",
+    "landing": "https://res.cloudinary.com/pbx/image/upload/v1553177347/portfolio-charlotte/works/bokee/bokee-landing.jpg",
     "sections": [
       {
         "class": "work-fullwidth background-green",
@@ -417,7 +417,7 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551556358/portfolio-charlotte/works/bokee/bokee-medical.jpg",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553177347/portfolio-charlotte/works/bokee/bokee-medical.jpg",
             "alt": "",
             "title": ""
           }

@@ -1,24 +1,44 @@
 .nav {
   position: fixed;
+  width: 100%;
   z-index: 10;
-  top: rem(50px);
-  left: rem(100px);
-  right: rem(100px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
   font-weight: 400;
+  height: 94px;
+  -webkit-transition: height .2s cubic-bezier(.455,.03,.515,.955);
+  -moz-transition: height .2s cubic-bezier(.455,.03,.515,.955);
+  transition: height .2s cubic-bezier(.455,.03,.515,.955);
+
+  &::before {
+    -webkit-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+    -moz-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+    transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: $white;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    height: 0;
+  }
 
   &.collapsed {
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    background: $white;
-    padding: rem(18px) rem(30px);
+    height: 58px;
 
     a {
-      color: $black;
+      color: inherit;
+
+      &:hover {
+        color: $hover;
+      }
     }
 
     &::before {
@@ -27,48 +47,44 @@
       transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
       width: 100%;
       content: "";
-      display: none;
-      background-color: #fff;
+      background-color: $white;
       -ms-transform-origin: center center;
       transform-origin: center center;
       height: 100%;
     }
   }
 
-  &-dark {
-    background: red;
+  &__item {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
 
-    a {
-      color: $black !important;
+    &--left {
+      font-size: rem(22px);
+      left: rem(100px);
+      margin-top: -10px;
+
+      @include medium {
+        left: rem(50px);
+      }
+
+      @include small {
+        left: rem(30px);
+      }
     }
 
-  }
+    &--right {
+      font-size: rem(16px);
+      right: rem(100px);
+      margin-top: -7px;
 
-  @include medium {
-    left: rem(50px);
-    right: rem(50px);
-  }
+      @include medium {
+        right: rem(50px);
+      }
 
-  @include small {
-    left: rem(30px);
-    right: rem(30px);
-    top: rem(18px);
+      @include small {
+        right: rem(30px);
+      }
+    }
   }
-
-  a {
-    color: $white;
-  }
-
-  &__left {
-    font-size: rem(22px);
-  }
-
-  &__right {
-    font-size: rem(16px);
-  }
-}
-
-.page-works-single,
-.page-works-all {
-  // margin-top: 100px;
 }

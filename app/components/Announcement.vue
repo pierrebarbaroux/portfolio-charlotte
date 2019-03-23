@@ -7,7 +7,10 @@
         </h2>
       </div>
       <p class="announcement__contact">
-        Feel free to contact me at <a href="mailto:charlotte.sieess@gmail.com">
+        Feel free to contact me at <a
+          href="mailto:charlotte.sieess@gmail.com"
+          class="text--white"
+        >
           charlotte.sieess@gmail.com
         </a>
       </p>

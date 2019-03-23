@@ -7,7 +7,8 @@
     >
       <router-link
         :to="`/works/${work.slug}`"
-        :aria-label="`${work .title}`"
+        :aria-label="`${work.title}`"
+        :title="`${work.title}`"
       >
         <div class="work__image">
           <img

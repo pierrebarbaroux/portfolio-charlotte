@@ -107,7 +107,7 @@ export default {
         preload: true,
         callback: (scrollY) => {
           const nav = document.querySelector('.nav');
-          scrollY > 200 ? nav.classList.contains('collapsed') || nav.classList.add('collapsed') : nav.classList.remove('collapsed');
+          return scrollY > 30 ? nav.classList.contains('collapsed') || nav.classList.add('collapsed') : nav.classList.remove('collapsed');
         },
       });
       setTimeout(() => {

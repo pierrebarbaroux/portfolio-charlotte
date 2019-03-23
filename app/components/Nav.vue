@@ -1,19 +1,21 @@
 <template>
   <nav class="nav">
-    <p class="nav__left">
+    <p class="nav__item nav__item--left">
       <router-link
         to="/"
         title="Charlotte Sieess"
+        class="text--white"
       >
         Cha.
       </router-link>
     </p>
-    <div class="nav__right">
+    <div class="nav__item nav__item--right">
       <ul>
         <li>
           <router-link
             to="/about"
             title="About"
+            class="text--white"
           >
             About
           </router-link>

@@ -61,19 +61,19 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/06_Liste.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391248/portfolio-charlotte/works/oystr/screens/mobile/06_Liste.jpg",
             "alt": "Where to go out in Nantes?",
             "title": "Places' list"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/07_Liste_details.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391248/portfolio-charlotte/works/oystr/screens/mobile/07_Liste_details.jpg",
             "alt": "Proposals for additional locations",
             "title": "Detailed places' list"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551619210/portfolio-charlotte/works/oystr/screens/mobile/08_Fiche_lieu.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391248/portfolio-charlotte/works/oystr/screens/mobile/08_Fiche_lieu.jpg",
             "alt": "Musée d'art de Nantes, descriptive sheet",
             "title": "Place's sheet"
           }
@@ -115,31 +115,31 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/01_Chargement.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391430/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/01_Chargement.jpg",
             "alt": "Oystr’s loading on desktop",
             "title": "Loading desktop"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618979/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/02_Onboarding.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391430/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/02_Onboarding.jpg",
             "alt": "Discover the places around you, on desktop",
             "title": "Onboarding desktop step 1"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/03_Onboarding.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391430/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/03_Onboarding.jpg",
             "alt": "Never miss out thrilling experiences anymore, on desktop",
             "title": "Onboarding desktop step 2"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/06_Map_hidden.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391448/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/06_Map_hidden.jpg",
             "alt": "Selections screen, Oystr website",
             "title": "Oystr desktop selections"
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618980/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/07_Map.png",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391430/portfolio-charlotte/works/oystr/screens/desktop/drag-and-drop/07_Map.jpg",
             "alt": "Oystr’s selection, catch some fresh air, website",
             "title": "Selection sheet, on desktop"
           }
@@ -151,14 +151,14 @@
         "assets": [
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618956/portfolio-charlotte/works/oystr/screens/desktop/04_Home.png",
-            "alt": "",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391528/portfolio-charlotte/works/oystr/screens/desktop/04_Home.jpg",
+            "alt": "Home, on desktop",
             "title": ""
           },
           {
             "type": "image",
-            "src": "https://res.cloudinary.com/pbx/image/upload/v1551618957/portfolio-charlotte/works/oystr/screens/desktop/05_Details_selection.png",
-            "alt": "",
+            "src": "https://res.cloudinary.com/pbx/image/upload/v1553391528/portfolio-charlotte/works/oystr/screens/desktop/05_Details_selection.jpg",
+            "alt": "Details selection, on desktop",
             "title": ""
           }
         ]
@@ -216,7 +216,7 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1553271408/portfolio-charlotte/works/pompidou/pompidou-inside.jpg",
-            "alt": "",
+            "alt": "Pompidou’s architecture, pipes",
             "title": ""
           }
         ]
@@ -285,13 +285,13 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/00_Chargement.png",
-            "alt": "",
+            "alt": "Loading Bokee’s application",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/01_Welcome.png",
-            "alt": "",
+            "alt": "Welcome to Bokee, liberal nurses’ assistant",
             "title": ""
           }
         ]
@@ -304,25 +304,25 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/02_Onboarding.png",
-            "alt": "",
+            "alt": "Add your patients",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/03_Onboarding.png",
-            "alt": "",
+            "alt": "Schedule your appointments",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/04_Onboarding.png",
-            "alt": "",
+            "alt": "Check the next patient to consult",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/05_Onboarding.png",
-            "alt": "",
+            "alt": "Drive with confidence",
             "title": ""
           }
         ]
@@ -333,7 +333,7 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551635296/portfolio-charlotte/works/bokee/bokee-mockup.png",
-            "alt": "",
+            "alt": "Mockup screens, Bokee’s application",
             "title": ""
           }
         ]
@@ -346,13 +346,13 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/06_Liste_patients_vide.png",
-            "alt": "",
+            "alt": "Add your first patient",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/07_Infos_patient.png",
-            "alt": "",
+            "alt": "Add a new appointment",
             "title": ""
           }
         ]
@@ -365,49 +365,49 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/08_Patient_ajoute.png",
-            "alt": "",
+            "alt": "Schedule your appointment with your patient",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/09_Nom_soin.png",
-            "alt": "",
+            "alt": "Fill the name of the treatment",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/10_Duree.png",
-            "alt": "",
+            "alt": "Fill in the duration of the treatment",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/11_Frequence.png",
-            "alt": "",
+            "alt": "Duration of the treatment",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/12_Recap.png",
-            "alt": "",
+            "alt": "Do you have another treatment to add to the appointment?",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618607/portfolio-charlotte/works/bokee/screens/13_Creneau.png",
-            "alt": "",
+            "alt": "Choose the time slot for your appointment",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618605/portfolio-charlotte/works/bokee/screens/14_Recap_bis.png",
-            "alt": "",
+            "alt": "You have scheduled the appointment correctly",
             "title": ""
           },
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1551618606/portfolio-charlotte/works/bokee/screens/15_Fiche_patient.png",
-            "alt": "",
+            "alt": "Frequency of the treatment",
             "title": ""
           }
         ]
@@ -418,7 +418,7 @@
           {
             "type": "image",
             "src": "https://res.cloudinary.com/pbx/image/upload/v1553177347/portfolio-charlotte/works/bokee/bokee-medical.jpg",
-            "alt": "",
+            "alt": "Stethoscope",
             "title": ""
           }
         ]
@@ -430,15 +430,11 @@
         "assets": [
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552596544/portfolio-charlotte/works/bokee/videos/01_Planning.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553391066/portfolio-charlotte/works/bokee/videos/01_Planning.mp4"
           },
           {
             "type": "video",
-            "src": "https://res.cloudinary.com/pbx/video/upload/v1552596544/portfolio-charlotte/works/bokee/videos/02_Planning.mp4",
-            "alt": "",
-            "title": ""
+            "src": "https://res.cloudinary.com/pbx/video/upload/v1553391066/portfolio-charlotte/works/bokee/videos/02_Planning.mp4"
           }
         ]
       }

@@ -67,7 +67,7 @@ export default {
       }
     },
 
-    onComplete(e) {
+    onComplete() {
       if (this.percentage >= 99) {
         if (!this.isLoaded) this.isLoaded = true;
         setTimeout(() => {

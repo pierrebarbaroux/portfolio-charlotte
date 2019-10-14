@@ -1,9 +1,12 @@
 <template>
   <div>
-    <Nav />
+    <Nav :is-loaded="isLoaded" />
     <div class="page page-works-all">
       <section class="works-all">
-        <WorksAll :works="works" />
+        <WorksAll
+          :works="works"
+          :is-loaded="isLoaded"
+        />
       </section>
     </div>
   </div>
@@ -21,6 +24,10 @@ export default {
     WorksAll,
   },
   props: {
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
     works: {
       type: Array,
       required: true,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <Nav :is-loaded="isLoaded" />
 
     <div class="page page-works-single">
       <section class="works-single">
@@ -29,8 +29,8 @@
                 >
                   {{ filteredData.description }}
                 </p>
-                <div class="work__more">
-                  {{ filteredData.target }}
+                <div class="work__small">
+                  {{ filteredData.target }} - Role : {{ filteredData.role }}
                 </div>
               </div>
             </div>
@@ -58,12 +58,6 @@
               </div>
 
               <div class="work__assets">
-                <div
-                  v-if="section.class === 'work-explanation'"
-                  class="work__blob"
-                >
-                  <!-- <img src="../assets/images/blob-1.svg"> -->
-                </div>
                 <div
                   v-if="section.class === 'work-slider-fullwidth'"
                   class="swiper-container"
@@ -131,12 +125,12 @@
                   <h2 class="work__name">
                     {{ nextProject.title }}
                   </h2>
-                  <div class="work__more">
+                  <div>
                     <router-link
                       :to="`/works/${nextProject.slug}`"
                       class="work__more"
                     >
-                      view more
+                      Curious ?
                     </router-link>
                   </div>
                 </div>
@@ -167,10 +161,17 @@ export default {
     Footer,
   },
   props: {
+    isLoaded: {
+      type: Boolean,
+      required: true,
+    },
     works: {
       type: Array,
       required: true,
     },
+  },
+  beforeRouteEnter(to, from, next) {
+    next();
   },
   data() {
     return {
@@ -237,6 +238,8 @@ export default {
     animInSections() {
       const controller = new ScrollMagic.Controller();
       const sectionsExplanation = document.querySelectorAll('.work__section.work-explanation');
+      const nextProjectContent = document.querySelector('.work__next .work__content');
+      const nextProjectImage = document.querySelector('.work__next .work__image');
 
       const timeline = new TimelineMax({
         onComplete: () => {
@@ -262,6 +265,27 @@ export default {
           })
           .addTo(controller);
       });
+
+      const slideNextProjectImage = TweenMax.fromTo(nextProjectImage, 0.9,
+        { autoAlpha: 0, x: 600 },
+        { autoAlpha: 1, x: 0, ease: Power3.easeInOut },
+        0);
+      const fadeInNextProjectContent = TweenMax.fromTo(nextProjectContent, 0.4,
+        { autoAlpha: 0 },
+        { autoAlpha: 1, ease: Power1.easeInOut },
+        0.2);
+
+      const sectionScene = new ScrollMagic.Scene({
+        triggerElement: nextProjectContent,
+        triggerHook: 0.9,
+        reverse: false,
+      })
+        .setTween(slideNextProjectImage)
+        // .setTween(fadeInNextProjectContent)
+        .on('end', () => {
+          sectionScene.destroy();
+        })
+        .addTo(controller);
     },
   },
 };

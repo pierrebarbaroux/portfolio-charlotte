@@ -1,3 +1,5 @@
+Options -Indexes
+
 # Make routes work on production
 RewriteEngine On
 RewriteBase /

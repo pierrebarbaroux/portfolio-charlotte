@@ -1,8 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  background: $primary;
-  color: $white;
+  background: $--color-primary-background;
 
   &--full {
     height: 100vh;
@@ -78,7 +77,7 @@
         -webkit-animation: extendLine 2s cubic-bezier(.4, 0, .2, .9) infinite;
         -o-animation: extendLine 2s cubic-bezier(.4, 0, .2, .9) infinite;
         animation: extendLine 2s cubic-bezier(.4, 0, .2, .9) infinite;
-        background: $white;
+        background: $--color-primary-text;
         position: absolute;
         left: rem(-60px);
         top: rem(8px);

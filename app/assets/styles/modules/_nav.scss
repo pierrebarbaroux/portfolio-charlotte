@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  font-weight: 400;
+  font-weight: 500;
   height: 94px;
   -webkit-transition: height .2s cubic-bezier(.455,.03,.515,.955);
   -moz-transition: height .2s cubic-bezier(.455,.03,.515,.955);
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     content: "";
-    background-color: $white;
+    background-color: white;
     -ms-transform-origin: center center;
     transform-origin: center center;
     height: 0;
@@ -33,21 +33,13 @@
     right: 0;
     height: 58px;
 
-    a {
-      color: inherit;
-
-      &:hover {
-        color: $hover;
-      }
-    }
-
     &::before {
       -webkit-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
       -moz-transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
       transition: background-color .2s linear,height .25s cubic-bezier(.455,.03,.515,.955),border .1s cubic-bezier(.455,.03,.515,.955) .15s;
       width: 100%;
       content: "";
-      background-color: $white;
+      background-color: white;
       -ms-transform-origin: center center;
       transform-origin: center center;
       height: 100%;

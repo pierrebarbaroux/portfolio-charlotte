@@ -12,7 +12,7 @@
               I'm Charlotte, a french digital student designer.
             </h2>
             <p>
-              I am 24 years old, I am living in Paris (but I was born and raised in Marseille, a city in south-east of France, that’s why I love the sea and the sun!). I am currently involved in the fourth year in HETIC, a web industry school where I am studying technologies and web design. I am pretty passionate about digital and graphic design. I am currently seeking for a six-month internship as a Digital Designer, from June to November 2019.
+              I’m 24 yo and I’m living in Paris (but I’m a girl from the South ☀️). I’m currently involved in the fifth year in HETIC, a web industry school where I am studying technologies and web design. I am pretty passionate about elephants 🐘, digital and graphic design. I am currently seeking for a part time job as a digital designer starting in January 2020.
             </p>
           </div>
           <div class="photo">
@@ -33,25 +33,18 @@
           </div>
           <div class="work__intro-content">
             <p class="work__description">
-              Last year I joined Go and Up, a parisian independent digital agency as the assistant of the  Creative Director. I was working for 4 months for various customers on UX and UI design tasks, equally for applications and websites. I loved working with this awesome team and I am looking for a new agency to welcome me!
+              I’m part of the Adfab team, a parisian digital agency as UX/UI designer junior. I’m working for various customers on UX and UI design tasks, equally for applications and websites. I love working with this awesome team and I am now looking for a new agency to welcome me! 😇
             </p>
 
             <div class="work__fields">
               <h3 class="work__fields-title">
-                What I do
+                I'm doing
               </h3>
-              <div class="work__fields-item">
-                <img src="../assets/images/blob-about-1.svg">
-                <p class="work__fields-item-text">
-                  Product design
-                </p>
-              </div>
-              <div class="work__fields-item">
-                <img src="../assets/images/blob-about-2.svg">
-                <p class="work__fields-item-text">
-                  Web interface
-                </p>
-              </div>
+              <ul class="work__fields-items">
+                <li>Web design</li>
+                <li>Product design</li>
+                <li>Design thinking</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -171,7 +164,6 @@ export default {
           font-family: $font-text;
           font-weight: 400;
           font-size: rem(14px);
-          color: $red;
         }
 
         h2 {
@@ -195,7 +187,6 @@ export default {
         p {
           font-size: rem(18px);
           line-height: rem(28px);
-          color: $white;
           font-family: $font-text;
           font-weight: 400;
         }
@@ -225,50 +216,40 @@ export default {
 }
 
 .work__fields {
-  margin-top: 60px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 
   &-title {
     font-size: rem(14px);
     line-height: rem(23px);
     text-transform: uppercase;
-    color: $red;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    color: $--color-subtitle;
   }
 
-  &-item {
-    font-size: rem(23px);
+  &-items {
+    font-size: rem(28px);
+    font-family: $font-title;
     line-height: rem(34px);
-    color: $white;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    text-align: center;
+    font-weight: bold;
+    color: $--color-primary-text;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: rem(-3px);
+
+        &::after {
+          content: '•';
+          margin-left: rem(5px);
+        }
+      }
+    }
 
     @include small {
       font-size: rem(16px);
       line-height: rem(24px);
-      width: 50%;
-    }
-
-    &:not(:last-child) {
-      margin-right: -40px;
-
-      @include small {
-        margin-right: -20px;
-      }
-    }
-
-    img {
-      width: 100%;
-      user-select: none;
-    }
-
-    &-text {
-      font-weight: 500;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 }

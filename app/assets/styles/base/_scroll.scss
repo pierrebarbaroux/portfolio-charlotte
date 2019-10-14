@@ -56,7 +56,7 @@ body, .is-virtual-scroll {
   }
 
   .vs-scrolldrag {
-    background: $red;
+    background: $--color-scrollbar;
     cursor: pointer;
   }
 }

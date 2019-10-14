@@ -26,12 +26,12 @@
           <h2 class="work__name">
             {{ work.title }}
           </h2>
-          <div class="work__more">
+          <div>
             <router-link
               :to="`/works/${work.slug}`"
               class="work__more"
             >
-              view more
+              Curious ?
             </router-link>
           </div>
         </div>
@@ -67,6 +67,11 @@ export default {
     if (this.isLoaded) {
       this.animInProjects();
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    console.log(to);
+    console.log(from);
+    next();
   },
   methods: {
     animInProjects: () => {

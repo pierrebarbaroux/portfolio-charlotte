@@ -1,11 +1,10 @@
 .preloader {
   width: 100vw;
   height: 100vh;
-  background: $primary;
+  background: $--color-primary-background;
   position: fixed;
   top: 0;
   z-index: 100;
-  color: $white;
   display: flex;
   align-items: center;
   justify-content: center;

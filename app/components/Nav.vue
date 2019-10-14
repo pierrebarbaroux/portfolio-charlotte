@@ -4,7 +4,7 @@
       <router-link
         to="/"
         title="Charlotte Sieess"
-        class="text--white"
+        class="link-animated"
       >
         Cha.
       </router-link>
@@ -15,7 +15,7 @@
           <router-link
             to="/about"
             title="About"
-            class="text--white"
+            class="link-animated"
           >
             About
           </router-link>

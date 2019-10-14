@@ -3,16 +3,22 @@
     <div class="container announcement__container">
       <div class="announcement__content">
         <h2 class="announcement__title">
-          I am looking for a six-month internship as a Digital Designer from June to November.
+          I am looking for a part time job as a digital designer starting in January 2020.
         </h2>
       </div>
       <p class="announcement__contact">
-        Feel free to contact me at <a
-          href="mailto:charlotte.sieess@gmail.com"
-          class="text--white"
-        >
-          charlotte.sieess@gmail.com
-        </a>
+        <span class="arrow">
+          ⟶
+        </span>
+
+        <span>
+          Feel free to contact me at <a
+            href="mailto:charlotte.sieess@gmail.com"
+            class="link-animated"
+          >
+            charlotte.sieess@gmail.com
+          </a>
+        </span>
       </p>
     </div>
   </section>

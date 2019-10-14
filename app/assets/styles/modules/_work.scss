@@ -9,11 +9,6 @@
     display: block;
   }
 
-  &__blob {
-    position: absolute;
-    z-index: 0;
-  }
-
   // Handle left/right alignment
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -44,8 +39,8 @@
     text-transform: uppercase;
     font-size: rem(14px);
     line-height: rem(21px);
-    font-weight: 500;
-    color: $subtitle;
+    font-weight: 400;
+    color: $--color-subtitle;
   }
 
   &__name {
@@ -53,7 +48,7 @@
     line-height: rem(72px);
     font-family: $font-title;
     font-weight: 700;
-    color: $title;
+    color: $--color-title;
 
     @include medium {
       font-size: rem(42px);
@@ -71,16 +66,37 @@
     line-height: rem(28px);
     font-family: $font-text;
     font-weight: 300;
-    color: $text;
+    color: $--color-text;
   }
 
   &__more {
+    display: inline-block;
     font-size: rem(15px);
     line-height: rem(25px);
     font-family: $font-text;
     font-weight: 500;
-    color: $trout;
-    padding-top: rem(30px);
+    text-transform: uppercase;
+    margin-top: rem(15px);
+    padding: 10px 50px;
+    border: 2px solid $--color-primary-button;
+    color: $--color-primary-button;
+    border-radius: 25px;
+
+    &:hover {
+      background: $--color-primary-button;
+      color: white;
+    }
+  }
+
+  &__small {
+    display: inline-block;
+    font-size: rem(15px);
+    line-height: rem(25px);
+    font-family: $font-text;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $--color-subtitle;
+    margin-top: rem(25px);
   }
 
   &__image {
@@ -108,10 +124,10 @@
   }
 
   a img {
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
@@ -134,7 +150,7 @@
     }
     &-container {
       width: 90%;
-      padding: 50px 0;
+      padding: 90px 0;
 
       @include small {
         width: 100%;
@@ -145,7 +161,7 @@
       text-align: right;
 
       & > *:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       @include small {
@@ -224,7 +240,7 @@
       }
 
       & > *:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -247,10 +263,11 @@
 
     &-title {
       font-family: $font-text;
-      // font-weight: 400;
+      font-weight: 400;
       font-size: rem(25px);
       line-height: rem(33px);
-      color: $title;
+      color: $--color-title;
+      text-align: center;
     }
 
     &-description {
@@ -258,7 +275,11 @@
       font-weight: 300;
       font-size: rem(18px);
       line-height: rem(28px);
+      max-width: 450px;
+      margin: auto;
       white-space: pre-line;
+      text-align: center;
+      color: $--color-text;
     }
 
     // Type: work-fullwidth
@@ -280,10 +301,9 @@
       }
 
       .work__section-title {
-        color: $white;
-        text-transform: uppercase;
+        color: white;
         font-family: $font-text;
-        font-weight: 500;
+        font-weight: 400;
         font-size: rem(23px);
       }
 
@@ -387,9 +407,8 @@
       }
 
       .work__section-title {
-        text-transform: uppercase;
         font-family: $font-text;
-        font-weight: 500;
+        font-weight: 400;
         font-size: rem(23px);
       }
     }

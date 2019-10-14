@@ -14,7 +14,7 @@
               target="_blank"
               title="LinkedIn"
               rel="noopener"
-              class="text--white"
+              class="link-animated"
             >
               LinkedIn
             </a>
@@ -25,7 +25,7 @@
               target="_blank"
               title="Dribbble"
               rel="noopener"
-              class="text--white"
+              class="link-animated"
             >
               Dribbble
             </a>
@@ -36,7 +36,7 @@
               target="_blank"
               title="Behance"
               rel="noopener"
-              class="text--white"
+              class="link-animated"
             >
               Behance
             </a>
@@ -50,7 +50,7 @@
           href="https://www.pierrebarbaroux.fr/"
           target="_blank"
           rel="noopener"
-          class="text--white"
+          class="link-animated"
         >
           PBX
         </a>

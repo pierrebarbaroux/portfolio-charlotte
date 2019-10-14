@@ -2,23 +2,13 @@
 $base-font-size: 16px;
 
 // Colors
-$black: #0F0F0F;
-$dark-purple: #171738;
-$white: #FFFFFF;
-$grey: #D8D8D8;
-$dark-grey: #515151;
-$light-grey: #F2F2F2;
-$red: #D64550;
-$trout: #495159;
-$dark-blue: #030027;
-$beige: #FEC3A6;
-// ---
-$primary: $beige;
-$hover: $red;
-$subtitle: $dark-blue;
-$title: $dark-purple;
-$text: $dark-blue;
-$viewmore: $trout;
+$--color-primary-background: #CEE8D5;
+$--color-primary-text: #043260;
+$--color-primary-button: #043260;
+$--color-subtitle: #424C55;
+$--color-title: #070600;
+$--color-text: #070600;
+$--color-scrollbar: #D64550;
 
 // Fonts
 $font-title: 'Noto Serif SC', serif;
